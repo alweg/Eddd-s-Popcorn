@@ -48,35 +48,35 @@ namespace SuperEd
                             {
                                 if (checkBox3.Checked)
                                 {
-                                    mem.WriteMemory(Pointers.weapon1, "byte", "0x00");
-                                    mem.WriteMemory(Pointers.weapon2, "byte", "0x00");
-                                    mem.WriteMemory(Pointers.stickInvIcon, "byte", "0x00");
-                                    mem.WriteMemory(Pointers.bowTieInvIcon, "byte", "0x00");
-                                    mem.WriteMemory(Pointers.divingHelmetInvIcon, "byte", "0x00");
-                                    mem.WriteMemory(Pointers.chameleonBeltInvIcon, "byte", "0x00");
-                                    mem.WriteMemory(Pointers.stickAttack, "byte", "0x00");
-                                    mem.WriteMemory(Pointers.stickMechanism, "byte", "0x00");
-                                    mem.WriteMemory(Pointers.stickMoveStoneL, "byte", "0x00");
-                                    mem.WriteMemory(Pointers.stickBlowpipe, "byte", "0x00");
-                                    mem.WriteMemory(Pointers.stickPogo, "byte", "0x00");
-                                    mem.WriteMemory(Pointers.stickPogoAttack, "byte", "0x00");
-                                    mem.WriteMemory(Pointers.stickMoveStoneH, "byte", "0x00");
+                                    mem.WriteMemory(Pointers.pWeapon1, "byte", "0x00");
+                                    mem.WriteMemory(Pointers.pWeapon2, "byte", "0x00");
+                                    mem.WriteMemory(Pointers.pStickInventoryIcon, "byte", "0x00");
+                                    mem.WriteMemory(Pointers.pBowtieInventoryIcon, "byte", "0x00");
+                                    mem.WriteMemory(Pointers.pDivinghelmetInventoryIcon, "byte", "0x00");
+                                    mem.WriteMemory(Pointers.pChameleonbeltInventoryIcon, "byte", "0x00");
+                                    mem.WriteMemory(Pointers.pStickAttack, "byte", "0x00");
+                                    mem.WriteMemory(Pointers.pStickMechanism, "byte", "0x00");
+                                    mem.WriteMemory(Pointers.pStickMoveStoneL, "byte", "0x00");
+                                    mem.WriteMemory(Pointers.pStickBlowpipe, "byte", "0x00");
+                                    mem.WriteMemory(Pointers.pStickPogo, "byte", "0x00");
+                                    mem.WriteMemory(Pointers.pStickPogoAttack, "byte", "0x00");
+                                    mem.WriteMemory(Pointers.pStickMoveStoneH, "byte", "0x00");
                                 }
                                 else if (!checkBox3.Checked)
                                 {
-                                    mem.WriteMemory(Pointers.weapon1, "byte", "0xFF");
-                                    mem.WriteMemory(Pointers.weapon2, "byte", "0x03");
-                                    mem.WriteMemory(Pointers.stickInvIcon, "byte", "0x01");
-                                    mem.WriteMemory(Pointers.bowTieInvIcon, "byte", "0x01");
-                                    mem.WriteMemory(Pointers.divingHelmetInvIcon, "byte", "0x01");
-                                    mem.WriteMemory(Pointers.chameleonBeltInvIcon, "byte", "0x01");
-                                    mem.WriteMemory(Pointers.stickAttack, "byte", "0x01");
-                                    mem.WriteMemory(Pointers.stickMechanism, "byte", "0x01");
-                                    mem.WriteMemory(Pointers.stickMoveStoneL, "byte", "0x01");
-                                    mem.WriteMemory(Pointers.stickBlowpipe, "byte", "0x01");
-                                    mem.WriteMemory(Pointers.stickPogo, "byte", "0x01");
-                                    mem.WriteMemory(Pointers.stickPogoAttack, "byte", "0x01");
-                                    mem.WriteMemory(Pointers.stickMoveStoneH, "byte", "0x01");
+                                    mem.WriteMemory(Pointers.pWeapon1, "byte", "0xFF");
+                                    mem.WriteMemory(Pointers.pWeapon2, "byte", "0x03");
+                                    mem.WriteMemory(Pointers.pStickInventoryIcon, "byte", "0x01");
+                                    mem.WriteMemory(Pointers.pBowtieInventoryIcon, "byte", "0x01");
+                                    mem.WriteMemory(Pointers.pDivinghelmetInventoryIcon, "byte", "0x01");
+                                    mem.WriteMemory(Pointers.pChameleonbeltInventoryIcon, "byte", "0x01");
+                                    mem.WriteMemory(Pointers.pStickAttack, "byte", "0x01");
+                                    mem.WriteMemory(Pointers.pStickMechanism, "byte", "0x01");
+                                    mem.WriteMemory(Pointers.pStickMoveStoneL, "byte", "0x01");
+                                    mem.WriteMemory(Pointers.pStickBlowpipe, "byte", "0x01");
+                                    mem.WriteMemory(Pointers.pStickPogo, "byte", "0x01");
+                                    mem.WriteMemory(Pointers.pStickPogoAttack, "byte", "0x01");
+                                    mem.WriteMemory(Pointers.pStickMoveStoneH, "byte", "0x01");
                                 }
                             }
                             break;
@@ -88,29 +88,29 @@ namespace SuperEd
         {
             switch (backgroundID)
             {
-                case 0: { mem.WriteMemory(Pointers.Background, "string", @"Menu\BkMenu.bmp\0\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
-                case 1: { mem.WriteMemory(Pointers.Background, "string", @"Menu\Special\Plus.bmp\0\0\0\0\0\0\0"); break; }
-                case 2: { mem.WriteMemory(Pointers.Background, "string", @"Logo2.bmp\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
-                case 3: { mem.WriteMemory(Pointers.Background, "string", @"UbiSoft.bmp\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
-                case 4: { mem.WriteMemory(Pointers.Background, "string", @"Inventor\Inventaire_fond.bmp"); break; }
+                case 0: { mem.WriteMemory(Pointers.pBackground, "string", @"Menu\BkMenu.bmp\0\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
+                case 1: { mem.WriteMemory(Pointers.pBackground, "string", @"Menu\Special\Plus.bmp\0\0\0\0\0\0\0"); break; }
+                case 2: { mem.WriteMemory(Pointers.pBackground, "string", @"Logo2.bmp\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
+                case 3: { mem.WriteMemory(Pointers.pBackground, "string", @"UbiSoft.bmp\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
+                case 4: { mem.WriteMemory(Pointers.pBackground, "string", @"Inventor\Inventaire_fond.bmp"); break; }
 
-                case 5: { mem.WriteMemory(Pointers.Background, "string", @"Level\Ski.bmp\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
-                case 6: { mem.WriteMemory(Pointers.Background, "string", @"Level\Sud.bmp\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
-                case 7: { mem.WriteMemory(Pointers.Background, "string", @"Level\CaveDoc.bmp\0\0\0\0\0\0\0\0\0\0\0"); break; }
-                case 8: { mem.WriteMemory(Pointers.Background, "string", @"Level\Carota.bmp\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
-                case 9: { mem.WriteMemory(Pointers.Background, "string", @"Level\North.bmp\0\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
-                case 10: { mem.WriteMemory(Pointers.Background, "string", @"Level\lecanyon.bmp\0\0\0\0\0\0\0\0\0\0"); break; }
-                case 11: { mem.WriteMemory(Pointers.Background, "string", @"Level\Cock.bmp\0\0\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
-                case 12: { mem.WriteMemory(Pointers.Background, "string", @"Level\Marmite.bmp\0\0\0\0\0\0\0\0\0\0\0"); break; }
-                case 13: { mem.WriteMemory(Pointers.Background, "string", @"Level\Pyramide.bmp\0\0\0\0\0\0\0\0\0\0\0"); break; }
-                case 14: { mem.WriteMemory(Pointers.Background, "string", @"Level\Land.bmp\0\0\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
+                case 5: { mem.WriteMemory(Pointers.pBackground, "string", @"Level\Ski.bmp\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
+                case 6: { mem.WriteMemory(Pointers.pBackground, "string", @"Level\Sud.bmp\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
+                case 7: { mem.WriteMemory(Pointers.pBackground, "string", @"Level\Cavedoc.bmp\0\0\0\0\0\0\0\0\0\0\0"); break; }
+                case 8: { mem.WriteMemory(Pointers.pBackground, "string", @"Level\Carota.bmp\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
+                case 9: { mem.WriteMemory(Pointers.pBackground, "string", @"Level\North.bmp\0\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
+                case 10: { mem.WriteMemory(Pointers.pBackground, "string", @"Level\lecanyon.bmp\0\0\0\0\0\0\0\0\0\0"); break; }
+                case 11: { mem.WriteMemory(Pointers.pBackground, "string", @"Level\Cock.bmp\0\0\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
+                case 12: { mem.WriteMemory(Pointers.pBackground, "string", @"Level\Marmite.bmp\0\0\0\0\0\0\0\0\0\0\0"); break; }
+                case 13: { mem.WriteMemory(Pointers.pBackground, "string", @"Level\Pyramide.bmp\0\0\0\0\0\0\0\0\0\0\0"); break; }
+                case 14: { mem.WriteMemory(Pointers.pBackground, "string", @"Level\Land.bmp\0\0\0\0\0\0\0\0\0\0\0\0\0\0"); break; }
 
-                case 15: { mem.WriteMemory(Pointers.Background, "string", @"Credits\Credit01.bmp\0\0\0\0\0\0\0\0"); break; }
-                case 16: { mem.WriteMemory(Pointers.Background, "string", @"Credits\Credit02.bmp\0\0\0\0\0\0\0\0"); break; }
-                case 17: { mem.WriteMemory(Pointers.Background, "string", @"Credits\Credit03.bmp\0\0\0\0\0\0\0\0"); break; }
-                case 18: { mem.WriteMemory(Pointers.Background, "string", @"Credits\Credit04.bmp\0\0\0\0\0\0\0\0"); break; }
-                case 19: { mem.WriteMemory(Pointers.Background, "string", @"Credits\Credit05.bmp\0\0\0\0\0\0\0\0"); break; }
-                case 20: { mem.WriteMemory(Pointers.Background, "string", @"Credits\Credit06.bmp\0\0\0\0\0\0\0\0"); break; }
+                case 15: { mem.WriteMemory(Pointers.pBackground, "string", @"Credits\Credit01.bmp\0\0\0\0\0\0\0\0"); break; }
+                case 16: { mem.WriteMemory(Pointers.pBackground, "string", @"Credits\Credit02.bmp\0\0\0\0\0\0\0\0"); break; }
+                case 17: { mem.WriteMemory(Pointers.pBackground, "string", @"Credits\Credit03.bmp\0\0\0\0\0\0\0\0"); break; }
+                case 18: { mem.WriteMemory(Pointers.pBackground, "string", @"Credits\Credit04.bmp\0\0\0\0\0\0\0\0"); break; }
+                case 19: { mem.WriteMemory(Pointers.pBackground, "string", @"Credits\Credit05.bmp\0\0\0\0\0\0\0\0"); break; }
+                case 20: { mem.WriteMemory(Pointers.pBackground, "string", @"Credits\Credit06.bmp\0\0\0\0\0\0\0\0"); break; }
             }
         }
         private void KeyboardHook_KeyDown(KeyHook.VKeys key)
@@ -157,14 +157,14 @@ namespace SuperEd
 
         private bool IsInTitleScreen()
         {
-            switch (mem.ReadString(Pointers.titleScreenCheck).ToLower())
+            switch (mem.ReadString(Pointers.pTitleScreenCheck).ToLower())
             {
                 case "": { return true; }
                 case "bkmenu.bmp": { return true; }
                 case "ft.bmp": { return true; }
                 case ".bmp": { return true; }
             }
-            if (mem.ReadString(Pointers.titleScreenCheck).Contains("\\0")) { return true; }
+            if (mem.ReadString(Pointers.pTitleScreenCheck).Contains("\\0")) { return true; }
             return false;
         }
 
@@ -172,14 +172,14 @@ namespace SuperEd
         {
             if (label6.Text != ("6"))
             {
-                switch (mem.ReadInt(Pointers.springs))
+                switch (mem.ReadInt(Pointers.pSprings))
                 {
-                    default: { mem.WriteMemory(Pointers.springs, "int", 65536.ToString()); label6.Text = ("1"); break; }
-                    case 65536: { mem.WriteMemory(Pointers.springs, "int", 131072.ToString()); label6.Text = ("2"); break; }
-                    case 131072: { mem.WriteMemory(Pointers.springs, "int", 196608.ToString()); label6.Text = ("3"); break; }
-                    case 196608: { mem.WriteMemory(Pointers.springs, "int", 262144.ToString()); label6.Text = ("4"); break; }
-                    case 262144: { mem.WriteMemory(Pointers.springs, "int", 327680.ToString()); label6.Text = ("5"); break; }
-                    case 327680: { mem.WriteMemory(Pointers.springs, "int", 393216.ToString()); label6.Text = ("6"); break; }
+                    default: { mem.WriteMemory(Pointers.pSprings, "int", 65536.ToString()); label6.Text = ("1"); break; }
+                    case 65536: { mem.WriteMemory(Pointers.pSprings, "int", 131072.ToString()); label6.Text = ("2"); break; }
+                    case 131072: { mem.WriteMemory(Pointers.pSprings, "int", 196608.ToString()); label6.Text = ("3"); break; }
+                    case 196608: { mem.WriteMemory(Pointers.pSprings, "int", 262144.ToString()); label6.Text = ("4"); break; }
+                    case 262144: { mem.WriteMemory(Pointers.pSprings, "int", 327680.ToString()); label6.Text = ("5"); break; }
+                    case 327680: { mem.WriteMemory(Pointers.pSprings, "int", 393216.ToString()); label6.Text = ("6"); break; }
                 }
             }
         }
@@ -187,15 +187,15 @@ namespace SuperEd
         {
             if (label6.Text != ("0"))
             {
-                switch (mem.ReadInt(Pointers.springs))
+                switch (mem.ReadInt(Pointers.pSprings))
                 {
-                    default: { mem.WriteMemory(Pointers.springs, "int", 0.ToString()); label6.Text = ("0"); break; }
-                    case 65536: { mem.WriteMemory(Pointers.springs, "int", 0.ToString()); label6.Text = ("0"); break; }
-                    case 131072: { mem.WriteMemory(Pointers.springs, "int", 65536.ToString()); label6.Text = ("1"); break; }
-                    case 196608: { mem.WriteMemory(Pointers.springs, "int", 131072.ToString()); label6.Text = ("2"); break; }
-                    case 262144: { mem.WriteMemory(Pointers.springs, "int", 196608.ToString()); label6.Text = ("3"); break; }
-                    case 327680: { mem.WriteMemory(Pointers.springs, "int", 262144.ToString()); label6.Text = ("4"); break; }
-                    case 393216: { mem.WriteMemory(Pointers.springs, "int", 327680.ToString()); label6.Text = ("5"); break; }
+                    default: { mem.WriteMemory(Pointers.pSprings, "int", 0.ToString()); label6.Text = ("0"); break; }
+                    case 65536: { mem.WriteMemory(Pointers.pSprings, "int", 0.ToString()); label6.Text = ("0"); break; }
+                    case 131072: { mem.WriteMemory(Pointers.pSprings, "int", 65536.ToString()); label6.Text = ("1"); break; }
+                    case 196608: { mem.WriteMemory(Pointers.pSprings, "int", 131072.ToString()); label6.Text = ("2"); break; }
+                    case 262144: { mem.WriteMemory(Pointers.pSprings, "int", 196608.ToString()); label6.Text = ("3"); break; }
+                    case 327680: { mem.WriteMemory(Pointers.pSprings, "int", 262144.ToString()); label6.Text = ("4"); break; }
+                    case 393216: { mem.WriteMemory(Pointers.pSprings, "int", 327680.ToString()); label6.Text = ("5"); break; }
                 }
             }
         }
@@ -204,14 +204,14 @@ namespace SuperEd
         {
             if (label8.Text != ("6"))
             {
-                switch (mem.ReadInt(Pointers.pinwheels))
+                switch (mem.ReadInt(Pointers.pPinwheels))
                 {
-                    default: { mem.WriteMemory(Pointers.pinwheels, "int", 65536.ToString()); label8.Text = ("1"); break; }
-                    case 65536: { mem.WriteMemory(Pointers.pinwheels, "int", 131072.ToString()); label8.Text = ("2"); break; }
-                    case 131072: { mem.WriteMemory(Pointers.pinwheels, "int", 196608.ToString()); label8.Text = ("3"); break; }
-                    case 196608: { mem.WriteMemory(Pointers.pinwheels, "int", 262144.ToString()); label8.Text = ("4"); break; }
-                    case 262144: { mem.WriteMemory(Pointers.pinwheels, "int", 327680.ToString()); label8.Text = ("5"); break; }
-                    case 327680: { mem.WriteMemory(Pointers.pinwheels, "int", 393216.ToString()); label8.Text = ("6"); break; }
+                    default: { mem.WriteMemory(Pointers.pPinwheels, "int", 65536.ToString()); label8.Text = ("1"); break; }
+                    case 65536: { mem.WriteMemory(Pointers.pPinwheels, "int", 131072.ToString()); label8.Text = ("2"); break; }
+                    case 131072: { mem.WriteMemory(Pointers.pPinwheels, "int", 196608.ToString()); label8.Text = ("3"); break; }
+                    case 196608: { mem.WriteMemory(Pointers.pPinwheels, "int", 262144.ToString()); label8.Text = ("4"); break; }
+                    case 262144: { mem.WriteMemory(Pointers.pPinwheels, "int", 327680.ToString()); label8.Text = ("5"); break; }
+                    case 327680: { mem.WriteMemory(Pointers.pPinwheels, "int", 393216.ToString()); label8.Text = ("6"); break; }
                 }
             }
         }
@@ -220,15 +220,15 @@ namespace SuperEd
             if (button6.Enabled == false) { button6.Enabled = true; button6.BackColor = Color.SandyBrown; }
             if (label8.Text != ("0"))
             {
-                switch (mem.ReadInt(Pointers.pinwheels))
+                switch (mem.ReadInt(Pointers.pPinwheels))
                 {
-                    default: { mem.WriteMemory(Pointers.pinwheels, "int", 0.ToString()); label8.Text = ("0"); break; }
-                    case 65536: { mem.WriteMemory(Pointers.pinwheels, "int", 0.ToString()); label8.Text = ("0"); break; }
-                    case 131072: { mem.WriteMemory(Pointers.pinwheels, "int", 65536.ToString()); label8.Text = ("1"); break; }
-                    case 196608: { mem.WriteMemory(Pointers.pinwheels, "int", 131072.ToString()); label8.Text = ("2"); break; }
-                    case 262144: { mem.WriteMemory(Pointers.pinwheels, "int", 196608.ToString()); label8.Text = ("3"); break; }
-                    case 327680: { mem.WriteMemory(Pointers.pinwheels, "int", 262144.ToString()); label8.Text = ("4"); break; }
-                    case 393216: { mem.WriteMemory(Pointers.pinwheels, "int", 327680.ToString()); label8.Text = ("5"); break; }
+                    default: { mem.WriteMemory(Pointers.pPinwheels, "int", 0.ToString()); label8.Text = ("0"); break; }
+                    case 65536: { mem.WriteMemory(Pointers.pPinwheels, "int", 0.ToString()); label8.Text = ("0"); break; }
+                    case 131072: { mem.WriteMemory(Pointers.pPinwheels, "int", 65536.ToString()); label8.Text = ("1"); break; }
+                    case 196608: { mem.WriteMemory(Pointers.pPinwheels, "int", 131072.ToString()); label8.Text = ("2"); break; }
+                    case 262144: { mem.WriteMemory(Pointers.pPinwheels, "int", 196608.ToString()); label8.Text = ("3"); break; }
+                    case 327680: { mem.WriteMemory(Pointers.pPinwheels, "int", 262144.ToString()); label8.Text = ("4"); break; }
+                    case 393216: { mem.WriteMemory(Pointers.pPinwheels, "int", 327680.ToString()); label8.Text = ("5"); break; }
                 }
             }
         }
@@ -237,14 +237,14 @@ namespace SuperEd
         {
             if (label11.Text != ("6"))
             {
-                switch (mem.ReadInt(Pointers.jumpingStones))
+                switch (mem.ReadInt(Pointers.pJumpingStones))
                 {
-                    default: { mem.WriteMemory(Pointers.jumpingStones, "int", 65536.ToString()); label11.Text = ("1"); break; }
-                    case 65536: { mem.WriteMemory(Pointers.jumpingStones, "int", 131072.ToString()); label11.Text = ("2"); break; }
-                    case 131072: { mem.WriteMemory(Pointers.jumpingStones, "int", 196608.ToString()); label11.Text = ("3"); break; }
-                    case 196608: { mem.WriteMemory(Pointers.jumpingStones, "int", 262144.ToString()); label11.Text = ("4"); break; }
-                    case 262144: { mem.WriteMemory(Pointers.jumpingStones, "int", 327680.ToString()); label11.Text = ("5"); break; }
-                    case 327680: { mem.WriteMemory(Pointers.jumpingStones, "int", 393216.ToString()); label11.Text = ("6"); break; }
+                    default: { mem.WriteMemory(Pointers.pJumpingStones, "int", 65536.ToString()); label11.Text = ("1"); break; }
+                    case 65536: { mem.WriteMemory(Pointers.pJumpingStones, "int", 131072.ToString()); label11.Text = ("2"); break; }
+                    case 131072: { mem.WriteMemory(Pointers.pJumpingStones, "int", 196608.ToString()); label11.Text = ("3"); break; }
+                    case 196608: { mem.WriteMemory(Pointers.pJumpingStones, "int", 262144.ToString()); label11.Text = ("4"); break; }
+                    case 262144: { mem.WriteMemory(Pointers.pJumpingStones, "int", 327680.ToString()); label11.Text = ("5"); break; }
+                    case 327680: { mem.WriteMemory(Pointers.pJumpingStones, "int", 393216.ToString()); label11.Text = ("6"); break; }
                 }
             }
         }
@@ -252,15 +252,15 @@ namespace SuperEd
         {
             if (label11.Text != ("0"))
             {
-                switch (mem.ReadInt(Pointers.jumpingStones))
+                switch (mem.ReadInt(Pointers.pJumpingStones))
                 {
-                    default: { mem.WriteMemory(Pointers.jumpingStones, "int", 0.ToString()); label11.Text = ("0"); break; }
-                    case 65536: { mem.WriteMemory(Pointers.jumpingStones, "int", 0.ToString()); label11.Text = ("0"); break; }
-                    case 131072: { mem.WriteMemory(Pointers.jumpingStones, "int", 65536.ToString()); label11.Text = ("1"); break; }
-                    case 196608: { mem.WriteMemory(Pointers.jumpingStones, "int", 131072.ToString()); label11.Text = ("2"); break; }
-                    case 262144: { mem.WriteMemory(Pointers.jumpingStones, "int", 196608.ToString()); label11.Text = ("3"); break; }
-                    case 327680: { mem.WriteMemory(Pointers.jumpingStones, "int", 262144.ToString()); label11.Text = ("4"); break; }
-                    case 393216: { mem.WriteMemory(Pointers.jumpingStones, "int", 327680.ToString()); label11.Text = ("5"); break; }
+                    default: { mem.WriteMemory(Pointers.pJumpingStones, "int", 0.ToString()); label11.Text = ("0"); break; }
+                    case 65536: { mem.WriteMemory(Pointers.pJumpingStones, "int", 0.ToString()); label11.Text = ("0"); break; }
+                    case 131072: { mem.WriteMemory(Pointers.pJumpingStones, "int", 65536.ToString()); label11.Text = ("1"); break; }
+                    case 196608: { mem.WriteMemory(Pointers.pJumpingStones, "int", 131072.ToString()); label11.Text = ("2"); break; }
+                    case 262144: { mem.WriteMemory(Pointers.pJumpingStones, "int", 196608.ToString()); label11.Text = ("3"); break; }
+                    case 327680: { mem.WriteMemory(Pointers.pJumpingStones, "int", 262144.ToString()); label11.Text = ("4"); break; }
+                    case 393216: { mem.WriteMemory(Pointers.pJumpingStones, "int", 327680.ToString()); label11.Text = ("5"); break; }
                 }
             }
         }
@@ -269,14 +269,14 @@ namespace SuperEd
         {
             if (label12.Text != ("6"))
             {
-                switch (mem.ReadInt(Pointers.feathers))
+                switch (mem.ReadInt(Pointers.pFeathers))
                 {
-                    default: { mem.WriteMemory(Pointers.feathers, "int", 65536.ToString()); label12.Text = ("1"); break; }
-                    case 65536: { mem.WriteMemory(Pointers.feathers, "int", 131072.ToString()); label12.Text = ("2"); break; }
-                    case 131072: { mem.WriteMemory(Pointers.feathers, "int", 196608.ToString()); label12.Text = ("3"); break; }
-                    case 196608: { mem.WriteMemory(Pointers.feathers, "int", 262144.ToString()); label12.Text = ("4"); break; }
-                    case 262144: { mem.WriteMemory(Pointers.feathers, "int", 327680.ToString()); label12.Text = ("5"); break; }
-                    case 327680: { mem.WriteMemory(Pointers.feathers, "int", 393216.ToString()); label12.Text = ("6"); break; }
+                    default: { mem.WriteMemory(Pointers.pFeathers, "int", 65536.ToString()); label12.Text = ("1"); break; }
+                    case 65536: { mem.WriteMemory(Pointers.pFeathers, "int", 131072.ToString()); label12.Text = ("2"); break; }
+                    case 131072: { mem.WriteMemory(Pointers.pFeathers, "int", 196608.ToString()); label12.Text = ("3"); break; }
+                    case 196608: { mem.WriteMemory(Pointers.pFeathers, "int", 262144.ToString()); label12.Text = ("4"); break; }
+                    case 262144: { mem.WriteMemory(Pointers.pFeathers, "int", 327680.ToString()); label12.Text = ("5"); break; }
+                    case 327680: { mem.WriteMemory(Pointers.pFeathers, "int", 393216.ToString()); label12.Text = ("6"); break; }
                 }
             }
         }
@@ -284,15 +284,15 @@ namespace SuperEd
         {
             if (label12.Text != ("0"))
             {
-                switch (mem.ReadInt(Pointers.feathers))
+                switch (mem.ReadInt(Pointers.pFeathers))
                 {
-                    default: { mem.WriteMemory(Pointers.feathers, "int", 0.ToString()); label12.Text = ("0"); break; }
-                    case 65536: { mem.WriteMemory(Pointers.feathers, "int", 0.ToString()); label12.Text = ("0"); break; }
-                    case 131072: { mem.WriteMemory(Pointers.feathers, "int", 65536.ToString()); label12.Text = ("1"); break; }
-                    case 196608: { mem.WriteMemory(Pointers.feathers, "int", 131072.ToString()); label12.Text = ("2"); break; }
-                    case 262144: { mem.WriteMemory(Pointers.feathers, "int", 196608.ToString()); label12.Text = ("3"); break; }
-                    case 327680: { mem.WriteMemory(Pointers.feathers, "int", 262144.ToString()); label12.Text = ("4"); break; }
-                    case 393216: { mem.WriteMemory(Pointers.feathers, "int", 327680.ToString()); label12.Text = ("5"); break; }
+                    default: { mem.WriteMemory(Pointers.pFeathers, "int", 0.ToString()); label12.Text = ("0"); break; }
+                    case 65536: { mem.WriteMemory(Pointers.pFeathers, "int", 0.ToString()); label12.Text = ("0"); break; }
+                    case 131072: { mem.WriteMemory(Pointers.pFeathers, "int", 65536.ToString()); label12.Text = ("1"); break; }
+                    case 196608: { mem.WriteMemory(Pointers.pFeathers, "int", 131072.ToString()); label12.Text = ("2"); break; }
+                    case 262144: { mem.WriteMemory(Pointers.pFeathers, "int", 196608.ToString()); label12.Text = ("3"); break; }
+                    case 327680: { mem.WriteMemory(Pointers.pFeathers, "int", 262144.ToString()); label12.Text = ("4"); break; }
+                    case 393216: { mem.WriteMemory(Pointers.pFeathers, "int", 327680.ToString()); label12.Text = ("5"); break; }
                 }
             }
         }
@@ -301,14 +301,14 @@ namespace SuperEd
         {
             if (label15.Text != ("6"))
             {
-                switch (mem.ReadInt(Pointers.dominoes))
+                switch (mem.ReadInt(Pointers.pDominoes))
                 {
-                    default: { mem.WriteMemory(Pointers.dominoes, "int", 65536.ToString()); label15.Text = ("1"); break; }
-                    case 65536: { mem.WriteMemory(Pointers.dominoes, "int", 131072.ToString()); label15.Text = ("2"); break; }
-                    case 131072: { mem.WriteMemory(Pointers.dominoes, "int", 196608.ToString()); label15.Text = ("3"); break; }
-                    case 196608: { mem.WriteMemory(Pointers.dominoes, "int", 262144.ToString()); label15.Text = ("4"); break; }
-                    case 262144: { mem.WriteMemory(Pointers.dominoes, "int", 327680.ToString()); label15.Text = ("5"); break; }
-                    case 327680: { mem.WriteMemory(Pointers.dominoes, "int", 393216.ToString()); label15.Text = ("6"); break; }
+                    default: { mem.WriteMemory(Pointers.pDominoes, "int", 65536.ToString()); label15.Text = ("1"); break; }
+                    case 65536: { mem.WriteMemory(Pointers.pDominoes, "int", 131072.ToString()); label15.Text = ("2"); break; }
+                    case 131072: { mem.WriteMemory(Pointers.pDominoes, "int", 196608.ToString()); label15.Text = ("3"); break; }
+                    case 196608: { mem.WriteMemory(Pointers.pDominoes, "int", 262144.ToString()); label15.Text = ("4"); break; }
+                    case 262144: { mem.WriteMemory(Pointers.pDominoes, "int", 327680.ToString()); label15.Text = ("5"); break; }
+                    case 327680: { mem.WriteMemory(Pointers.pDominoes, "int", 393216.ToString()); label15.Text = ("6"); break; }
                 }
             }
         }
@@ -316,15 +316,15 @@ namespace SuperEd
         {
             if (label15.Text != ("0"))
             {
-                switch (mem.ReadInt(Pointers.dominoes))
+                switch (mem.ReadInt(Pointers.pDominoes))
                 {
-                    default: { mem.WriteMemory(Pointers.dominoes, "int", 0.ToString()); label15.Text = ("0"); break; }
-                    case 65536: { mem.WriteMemory(Pointers.dominoes, "int", 0.ToString()); label15.Text = ("0"); break; }
-                    case 131072: { mem.WriteMemory(Pointers.dominoes, "int", 65536.ToString()); label15.Text = ("1"); break; }
-                    case 196608: { mem.WriteMemory(Pointers.dominoes, "int", 131072.ToString()); label15.Text = ("2"); break; }
-                    case 262144: { mem.WriteMemory(Pointers.dominoes, "int", 196608.ToString()); label15.Text = ("3"); break; }
-                    case 327680: { mem.WriteMemory(Pointers.dominoes, "int", 262144.ToString()); label15.Text = ("4"); break; }
-                    case 393216: { mem.WriteMemory(Pointers.dominoes, "int", 327680.ToString()); label15.Text = ("5"); break; }
+                    default: { mem.WriteMemory(Pointers.pDominoes, "int", 0.ToString()); label15.Text = ("0"); break; }
+                    case 65536: { mem.WriteMemory(Pointers.pDominoes, "int", 0.ToString()); label15.Text = ("0"); break; }
+                    case 131072: { mem.WriteMemory(Pointers.pDominoes, "int", 65536.ToString()); label15.Text = ("1"); break; }
+                    case 196608: { mem.WriteMemory(Pointers.pDominoes, "int", 131072.ToString()); label15.Text = ("2"); break; }
+                    case 262144: { mem.WriteMemory(Pointers.pDominoes, "int", 196608.ToString()); label15.Text = ("3"); break; }
+                    case 327680: { mem.WriteMemory(Pointers.pDominoes, "int", 262144.ToString()); label15.Text = ("4"); break; }
+                    case 393216: { mem.WriteMemory(Pointers.pDominoes, "int", 327680.ToString()); label15.Text = ("5"); break; }
                 }
             }
         }
@@ -333,14 +333,14 @@ namespace SuperEd
         {
             if (label16.Text != ("6"))
             {
-                switch (mem.ReadInt(Pointers.piggyBanks))
+                switch (mem.ReadInt(Pointers.pPiggyBanks))
                 {
-                    default: { mem.WriteMemory(Pointers.piggyBanks, "int", 65536.ToString()); label16.Text = ("1"); break; }
-                    case 65536: { mem.WriteMemory(Pointers.piggyBanks, "int", 131072.ToString()); label16.Text = ("2"); break; }
-                    case 131072: { mem.WriteMemory(Pointers.piggyBanks, "int", 196608.ToString()); label16.Text = ("3"); break; }
-                    case 196608: { mem.WriteMemory(Pointers.piggyBanks, "int", 262144.ToString()); label16.Text = ("4"); break; }
-                    case 262144: { mem.WriteMemory(Pointers.piggyBanks, "int", 327680.ToString()); label16.Text = ("5"); break; }
-                    case 327680: { mem.WriteMemory(Pointers.piggyBanks, "int", 393216.ToString()); label16.Text = ("6"); break; }
+                    default: { mem.WriteMemory(Pointers.pPiggyBanks, "int", 65536.ToString()); label16.Text = ("1"); break; }
+                    case 65536: { mem.WriteMemory(Pointers.pPiggyBanks, "int", 131072.ToString()); label16.Text = ("2"); break; }
+                    case 131072: { mem.WriteMemory(Pointers.pPiggyBanks, "int", 196608.ToString()); label16.Text = ("3"); break; }
+                    case 196608: { mem.WriteMemory(Pointers.pPiggyBanks, "int", 262144.ToString()); label16.Text = ("4"); break; }
+                    case 262144: { mem.WriteMemory(Pointers.pPiggyBanks, "int", 327680.ToString()); label16.Text = ("5"); break; }
+                    case 327680: { mem.WriteMemory(Pointers.pPiggyBanks, "int", 393216.ToString()); label16.Text = ("6"); break; }
                 }
             }
         }
@@ -348,15 +348,15 @@ namespace SuperEd
         {
             if (label16.Text != ("0"))
             {
-                switch (mem.ReadInt(Pointers.piggyBanks))
+                switch (mem.ReadInt(Pointers.pPiggyBanks))
                 {
-                    default: { mem.WriteMemory(Pointers.piggyBanks, "int", 0.ToString()); label16.Text = ("0"); break; }
-                    case 65536: { mem.WriteMemory(Pointers.piggyBanks, "int", 0.ToString()); label16.Text = ("0"); break; }
-                    case 131072: { mem.WriteMemory(Pointers.piggyBanks, "int", 65536.ToString()); label16.Text = ("1"); break; }
-                    case 196608: { mem.WriteMemory(Pointers.piggyBanks, "int", 131072.ToString()); label16.Text = ("2"); break; }
-                    case 262144: { mem.WriteMemory(Pointers.piggyBanks, "int", 196608.ToString()); label16.Text = ("3"); break; }
-                    case 327680: { mem.WriteMemory(Pointers.piggyBanks, "int", 262144.ToString()); label16.Text = ("4"); break; }
-                    case 393216: { mem.WriteMemory(Pointers.piggyBanks, "int", 327680.ToString()); label16.Text = ("5"); break; }
+                    default: { mem.WriteMemory(Pointers.pPiggyBanks, "int", 0.ToString()); label16.Text = ("0"); break; }
+                    case 65536: { mem.WriteMemory(Pointers.pPiggyBanks, "int", 0.ToString()); label16.Text = ("0"); break; }
+                    case 131072: { mem.WriteMemory(Pointers.pPiggyBanks, "int", 65536.ToString()); label16.Text = ("1"); break; }
+                    case 196608: { mem.WriteMemory(Pointers.pPiggyBanks, "int", 131072.ToString()); label16.Text = ("2"); break; }
+                    case 262144: { mem.WriteMemory(Pointers.pPiggyBanks, "int", 196608.ToString()); label16.Text = ("3"); break; }
+                    case 327680: { mem.WriteMemory(Pointers.pPiggyBanks, "int", 262144.ToString()); label16.Text = ("4"); break; }
+                    case 393216: { mem.WriteMemory(Pointers.pPiggyBanks, "int", 327680.ToString()); label16.Text = ("5"); break; }
                 }
             }
         }
@@ -365,344 +365,174 @@ namespace SuperEd
         {
             if (label4.Text != ("10"))
             {
-                switch (mem.ReadString(Pointers.levelName))
+                switch (mem.ReadString(Pointers.pLevelName).ToLower())
                 {
-                    case ("TotalSki"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("TOTALSKI"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
-                            }
-                            break;
-                        }
                     case ("totalski"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 1.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 2.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 3.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 4.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 5.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 6.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 7.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 8.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 9.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
                             }
                             break;
                         }
                     case ("sud0"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("SUD0"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 1.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 2.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 3.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 4.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 5.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 6.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 7.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 8.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 9.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
                             }
                             break;
                         }
                     case ("cavedoc"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 1.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 2.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 3.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 4.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 5.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 6.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 7.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 8.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 9.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
                             }
                             break;
                         }
-                    case ("CAVEDOC"):
+                    case ("carota"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("Carota"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("CAROTA"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 1.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 2.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 3.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 4.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 5.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 6.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 7.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 8.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 9.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
                             }
                             break;
                         }
                     case ("north"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 256.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 512.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 768.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 1024.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 1280.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 1536.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 1792.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 2048.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 2304.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 2560.ToString()); label4.Location = new Point(6, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 256.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 512.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 768.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 1024.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 1280.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 1536.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 1792.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 2048.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 2304.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 2560.ToString()); label4.Location = new Point(6, 4); break; }
                             }
                             break;
                         }
-                    case ("NORTH"):
+                    case ("lecanyon"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 256.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 512.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 768.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 1024.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 1280.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 1536.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 1792.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 2048.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 2304.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 2560.ToString()); label4.Location = new Point(6, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("LeCanyon"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("LECANYON"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 1.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 2.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 3.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 4.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 5.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 6.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 7.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 8.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 9.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
                             }
                             break;
                         }
                     case ("cock01"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("COCK01"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 1.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 2.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 3.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 4.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 5.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 6.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 7.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 8.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 9.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
                             }
                             break;
                         }
                     case ("pyramide"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("PYRAMIDE"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 1.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 2.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 3.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 4.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 5.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 6.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 7.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 8.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 9.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
                             }
                             break;
                         }
                     case ("marmite"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("MARMITE"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 1.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 2.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 3.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 4.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 5.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 6.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 7.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 8.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 9.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 1.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 2.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 3.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 4.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 5.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 6.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 7.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 8.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 9.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 10.ToString()); label4.Location = new Point(6, 4); break; }
                             }
                             break;
                         }
                 }
-                switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                switch (mem.ReadInt(Pointers.pSilverspadesText))
                 {
-                    default: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2561.ToString()); label4.Text = ("1"); break; }
-                    case 2561: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2562.ToString()); label4.Text = ("2"); break; }
-                    case 2562: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2563.ToString()); label4.Text = ("3"); break; }
-                    case 2563: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2564.ToString()); label4.Text = ("4"); break; }
-                    case 2564: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2565.ToString()); label4.Text = ("5"); break; }
-                    case 2565: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2566.ToString()); label4.Text = ("6"); break; }
-                    case 2566: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2567.ToString()); label4.Text = ("7"); break; }
-                    case 2567: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2568.ToString()); label4.Text = ("8"); break; }
-                    case 2568: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2569.ToString()); label4.Text = ("9"); break; }
-                    case 2569: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2570.ToString()); label4.Text = ("10"); break; }
+                    default: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2561.ToString()); label4.Text = ("1"); break; }
+                    case 2561: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2562.ToString()); label4.Text = ("2"); break; }
+                    case 2562: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2563.ToString()); label4.Text = ("3"); break; }
+                    case 2563: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2564.ToString()); label4.Text = ("4"); break; }
+                    case 2564: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2565.ToString()); label4.Text = ("5"); break; }
+                    case 2565: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2566.ToString()); label4.Text = ("6"); break; }
+                    case 2566: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2567.ToString()); label4.Text = ("7"); break; }
+                    case 2567: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2568.ToString()); label4.Text = ("8"); break; }
+                    case 2568: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2569.ToString()); label4.Text = ("9"); break; }
+                    case 2569: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2570.ToString()); label4.Text = ("10"); break; }
                 }
             }
         }
@@ -710,364 +540,184 @@ namespace SuperEd
         {
             if (label4.Text != ("0"))
             {
-                switch (mem.ReadString(Pointers.levelName))
+                switch (mem.ReadString(Pointers.pLevelName).ToLower())
                 {
-                    case ("TotalSki"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("TOTALSKI"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
-                            }
-                            break;
-                        }
                     case ("totalski"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesTOTALSKI, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 0.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 0.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 1.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 2.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 3.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 4.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 5.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 6.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 7.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 8.ToString()); break; }
+                                case 2570: { mem.WriteMemory(Pointers.pSilverspadesTotalski, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
                             }
                             break;
                         }
                     case ("sud0"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("SUD0"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesSUD0, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 0.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 0.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 1.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 2.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 3.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 4.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 5.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 6.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 7.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 8.ToString()); break; }
+                                case 2570: { mem.WriteMemory(Pointers.pSilverspadesSud0, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
                             }
                             break;
                         }
                     case ("cavedoc"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 0.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 0.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 1.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 2.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 3.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 4.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 5.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 6.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 7.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 8.ToString()); break; }
+                                case 2570: { mem.WriteMemory(Pointers.pSilverspadesCavedoc, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
                             }
                             break;
                         }
-                    case ("CAVEDOC"):
+                    case ("carota"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesCAVEDOC, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("Carota"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("CAROTA"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesCAROTA, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 0.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 0.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 1.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 2.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 3.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 4.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 5.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 6.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 7.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 8.ToString()); break; }
+                                case 2570: { mem.WriteMemory(Pointers.pSilverspadesCarota, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
                             }
                             break;
                         }
                     case ("north"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 256.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 512.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 768.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 1024.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 1280.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 1536.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 1792.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 2048.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 2304.ToString()); label4.Location = new Point(9, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 0.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 0.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 256.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 512.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 768.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 1024.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 1280.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 1536.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 1792.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 2048.ToString()); break; }
+                                case 2570: { mem.WriteMemory(Pointers.pSilverspadesNorth, "int", 2304.ToString()); label4.Location = new Point(9, 4); break; }
                             }
                             break;
                         }
-                    case ("NORTH"):
+                    case ("lecanyon"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 256.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 512.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 768.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 1024.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 1280.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 1536.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 1792.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 2048.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesNORTH, "int", 2304.ToString()); label4.Location = new Point(9, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("LeCanyon"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("LECANYON"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesLECANYON, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 0.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 0.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 1.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 2.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 3.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 4.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 5.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 6.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 7.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 8.ToString()); break; }
+                                case 2570: { mem.WriteMemory(Pointers.pSilverspadesLecanyon, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
                             }
                             break;
                         }
                     case ("cock01"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("COCK01"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesCOCK01, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 0.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 0.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 1.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 2.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 3.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 4.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 5.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 6.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 7.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 8.ToString()); break; }
+                                case 2570: { mem.WriteMemory(Pointers.pSilverspadesCock01, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
                             }
                             break;
                         }
                     case ("pyramide"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("PYRAMIDE"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesPYRAMIDE, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 0.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 0.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 1.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 2.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 3.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 4.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 5.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 6.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 7.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 8.ToString()); break; }
+                                case 2570: { mem.WriteMemory(Pointers.pSilverspadesPyramide, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
                             }
                             break;
                         }
                     case ("marmite"):
                         {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                            switch (mem.ReadInt(Pointers.pSilverspadesText))
                             {
-                                default: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
-                            }
-                            break;
-                        }
-                    case ("MARMITE"):
-                        {
-                            switch (mem.ReadInt(Pointers.silverSpadesTEXT))
-                            {
-                                default: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 0.ToString()); break; }
-                                case 2561: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 0.ToString()); break; }
-                                case 2562: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 1.ToString()); break; }
-                                case 2563: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 2.ToString()); break; }
-                                case 2564: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 3.ToString()); break; }
-                                case 2565: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 4.ToString()); break; }
-                                case 2566: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 5.ToString()); break; }
-                                case 2567: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 6.ToString()); break; }
-                                case 2568: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 7.ToString()); break; }
-                                case 2569: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 8.ToString()); break; }
-                                case 2570: { mem.WriteMemory(Pointers.silverSpadesMARMITE, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
+                                default: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 0.ToString()); break; }
+                                case 2561: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 0.ToString()); break; }
+                                case 2562: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 1.ToString()); break; }
+                                case 2563: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 2.ToString()); break; }
+                                case 2564: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 3.ToString()); break; }
+                                case 2565: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 4.ToString()); break; }
+                                case 2566: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 5.ToString()); break; }
+                                case 2567: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 6.ToString()); break; }
+                                case 2568: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 7.ToString()); break; }
+                                case 2569: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 8.ToString()); break; }
+                                case 2570: { mem.WriteMemory(Pointers.pSilverspadesMarmite, "int", 9.ToString()); label4.Location = new Point(9, 4); break; }
                             }
                             break;
                         }
                 }
-                switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                switch (mem.ReadInt(Pointers.pSilverspadesText))
                 {
-                    default: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2560.ToString()); label4.Text = ("0"); break; }
-                    case 2561: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2560.ToString()); label4.Text = ("0"); break; }
-                    case 2562: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2561.ToString()); label4.Text = ("1"); break; }
-                    case 2563: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2562.ToString()); label4.Text = ("2"); break; }
-                    case 2564: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2563.ToString()); label4.Text = ("3"); break; }
-                    case 2565: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2564.ToString()); label4.Text = ("4"); break; }
-                    case 2566: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2565.ToString()); label4.Text = ("5"); break; }
-                    case 2567: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2566.ToString()); label4.Text = ("6"); break; }
-                    case 2568: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2567.ToString()); label4.Text = ("7"); break; }
-                    case 2569: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2568.ToString()); label4.Text = ("8"); break; }
-                    case 2570: { mem.WriteMemory(Pointers.silverSpadesTEXT, "int", 2569.ToString()); label4.Text = ("9"); break; }
+                    default: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2560.ToString()); label4.Text = ("0"); break; }
+                    case 2561: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2560.ToString()); label4.Text = ("0"); break; }
+                    case 2562: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2561.ToString()); label4.Text = ("1"); break; }
+                    case 2563: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2562.ToString()); label4.Text = ("2"); break; }
+                    case 2564: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2563.ToString()); label4.Text = ("3"); break; }
+                    case 2565: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2564.ToString()); label4.Text = ("4"); break; }
+                    case 2566: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2565.ToString()); label4.Text = ("5"); break; }
+                    case 2567: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2566.ToString()); label4.Text = ("6"); break; }
+                    case 2568: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2567.ToString()); label4.Text = ("7"); break; }
+                    case 2569: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2568.ToString()); label4.Text = ("8"); break; }
+                    case 2570: { mem.WriteMemory(Pointers.pSilverspadesText, "int", 2569.ToString()); label4.Text = ("9"); break; }
                 }
             }
         }
@@ -1076,21 +726,21 @@ namespace SuperEd
         {
             if (label22.Text != ("Yes"))
             {
-                switch (mem.ReadByte(Pointers.weapon1))
+                switch (mem.ReadByte(Pointers.pWeapon1))
                 {
-                    default: { mem.WriteMemory(Pointers.weapon1, "byte", "0x07"); break; }
-                    case 8: { mem.WriteMemory(Pointers.weapon1, "byte", "0x0F"); break; }
-                    case 112: { mem.WriteMemory(Pointers.weapon1, "byte", "0x77"); break; }
-                    case 120: { mem.WriteMemory(Pointers.weapon1, "byte", "0x78"); break; }
-                    case 128: { mem.WriteMemory(Pointers.weapon1, "byte", "0x87"); break; }
-                    case 136: { mem.WriteMemory(Pointers.weapon1, "byte", "0x8F"); break; }
-                    case 240: { mem.WriteMemory(Pointers.weapon1, "byte", "0xF7"); break; }
-                    case 248: { mem.WriteMemory(Pointers.weapon1, "byte", "0xFF"); break; }
+                    default: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x07"); break; }
+                    case 8: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x0F"); break; }
+                    case 112: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x77"); break; }
+                    case 120: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x78"); break; }
+                    case 128: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x87"); break; }
+                    case 136: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x8F"); break; }
+                    case 240: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0xF7"); break; }
+                    case 248: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0xFF"); break; }
                 }
-                mem.WriteMemory(Pointers.stickInvIcon, "byte", "0x01");
-                mem.WriteMemory(Pointers.stickAttack, "byte", "0x01");
-                mem.WriteMemory(Pointers.stickMechanism, "byte", "0x01");
-                mem.WriteMemory(Pointers.stickMoveStoneL, "byte", "0x01");
+                mem.WriteMemory(Pointers.pStickInventoryIcon, "byte", "0x01");
+                mem.WriteMemory(Pointers.pStickAttack, "byte", "0x01");
+                mem.WriteMemory(Pointers.pStickMechanism, "byte", "0x01");
+                mem.WriteMemory(Pointers.pStickMoveStoneL, "byte", "0x01");
                 label22.Text = ("Yes");
                 label22.ForeColor = Color.White;
                 label22.BackColor = Color.DarkGoldenrod;
@@ -1106,22 +756,22 @@ namespace SuperEd
         {
             if (label22.Text != ("No"))
             {
-                switch (mem.ReadByte(Pointers.weapon1))
+                switch (mem.ReadByte(Pointers.pWeapon1))
                 {
-                    default: { mem.WriteMemory(Pointers.weapon1, "byte", "0x00"); break; }
-                    case 7: { mem.WriteMemory(Pointers.weapon1, "byte", "0x00"); break; }
-                    case 15: { mem.WriteMemory(Pointers.weapon1, "byte", "0x08"); break; }
-                    case 119: { mem.WriteMemory(Pointers.weapon1, "byte", "0x70"); break; }
-                    case 127: { mem.WriteMemory(Pointers.weapon1, "byte", "0x78"); break; }
-                    case 135: { mem.WriteMemory(Pointers.weapon1, "byte", "0x80"); break; }
-                    case 143: { mem.WriteMemory(Pointers.weapon1, "byte", "0x88"); break; }
-                    case 247: { mem.WriteMemory(Pointers.weapon1, "byte", "0xF0"); break; }
-                    case 255: { mem.WriteMemory(Pointers.weapon1, "byte", "0xF8"); break; }
+                    default: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x00"); break; }
+                    case 7: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x00"); break; }
+                    case 15: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x08"); break; }
+                    case 119: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x70"); break; }
+                    case 127: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x78"); break; }
+                    case 135: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x80"); break; }
+                    case 143: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x88"); break; }
+                    case 247: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0xF0"); break; }
+                    case 255: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0xF8"); break; }
                 }
-                mem.WriteMemory(Pointers.stickInvIcon, "byte", "0x00");
-                mem.WriteMemory(Pointers.stickAttack, "byte", "0x0");
-                mem.WriteMemory(Pointers.stickMechanism, "byte", "0x00");
-                mem.WriteMemory(Pointers.stickMoveStoneL, "byte", "0x00");
+                mem.WriteMemory(Pointers.pStickInventoryIcon, "byte", "0x00");
+                mem.WriteMemory(Pointers.pStickAttack, "byte", "0x0");
+                mem.WriteMemory(Pointers.pStickMechanism, "byte", "0x00");
+                mem.WriteMemory(Pointers.pStickMoveStoneL, "byte", "0x00");
                 label22.Text = ("No");
                 label22.ForeColor = Color.FromArgb(80, 80, 80);
                 label22.BackColor = Color.WhiteSmoke;
@@ -1138,19 +788,19 @@ namespace SuperEd
         {
             if (label19.Text != ("Yes"))
             {
-                switch (mem.ReadByte(Pointers.weapon1))
+                switch (mem.ReadByte(Pointers.pWeapon1))
                 {
-                    default: { mem.WriteMemory(Pointers.weapon1, "byte", "0x08"); break; }
-                    case 7: { mem.WriteMemory(Pointers.weapon1, "byte", "0x0F"); break; }
-                    case 112: { mem.WriteMemory(Pointers.weapon1, "byte", "0x78"); break; }
-                    case 119: { mem.WriteMemory(Pointers.weapon1, "byte", "0x7F"); break; }
-                    case 128: { mem.WriteMemory(Pointers.weapon1, "byte", "0x88"); break; }
-                    case 135: { mem.WriteMemory(Pointers.weapon1, "byte", "0x8F"); break; }
-                    case 240: { mem.WriteMemory(Pointers.weapon1, "byte", "0xF8"); break; }
-                    case 247: { mem.WriteMemory(Pointers.weapon1, "byte", "0xFF"); break; }
+                    default: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x08"); break; }
+                    case 7: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x0F"); break; }
+                    case 112: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x78"); break; }
+                    case 119: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x7F"); break; }
+                    case 128: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x88"); break; }
+                    case 135: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x8F"); break; }
+                    case 240: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0xF8"); break; }
+                    case 247: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0xFF"); break; }
                 }
-                mem.WriteMemory(Pointers.stickInvIcon, "byte", "0x01");
-                mem.WriteMemory(Pointers.stickBlowpipe, "byte", "0x01");
+                mem.WriteMemory(Pointers.pStickInventoryIcon, "byte", "0x01");
+                mem.WriteMemory(Pointers.pStickBlowpipe, "byte", "0x01");
                 label19.Text = ("Yes");
                 label19.ForeColor = Color.White;
                 label19.BackColor = Color.BurlyWood;
@@ -1166,20 +816,20 @@ namespace SuperEd
         {
             if (label19.Text != ("No"))
             {
-                switch (mem.ReadByte(Pointers.weapon1))
+                switch (mem.ReadByte(Pointers.pWeapon1))
                 {
-                    default: { mem.WriteMemory(Pointers.weapon1, "byte", "0x00"); break; }
-                    case 8: { mem.WriteMemory(Pointers.weapon1, "byte", "0x00"); break; }
-                    case 15: { mem.WriteMemory(Pointers.weapon1, "byte", "0x07"); break; }
-                    case 120: { mem.WriteMemory(Pointers.weapon1, "byte", "0x70"); break; }
-                    case 127: { mem.WriteMemory(Pointers.weapon1, "byte", "0x77"); break; }
-                    case 136: { mem.WriteMemory(Pointers.weapon1, "byte", "0x80"); break; }
-                    case 143: { mem.WriteMemory(Pointers.weapon1, "byte", "0x87"); break; }
-                    case 248: { mem.WriteMemory(Pointers.weapon1, "byte", "0xF0"); break; }
-                    case 255: { mem.WriteMemory(Pointers.weapon1, "byte", "0xF7"); break; }
+                    default: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x00"); break; }
+                    case 8: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x00"); break; }
+                    case 15: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x07"); break; }
+                    case 120: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x70"); break; }
+                    case 127: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x77"); break; }
+                    case 136: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x80"); break; }
+                    case 143: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x87"); break; }
+                    case 248: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0xF0"); break; }
+                    case 255: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0xF7"); break; }
                 }
-                mem.WriteMemory(Pointers.stickInvIcon, "byte", "0x00");
-                mem.WriteMemory(Pointers.stickBlowpipe, "byte", "0x00");
+                mem.WriteMemory(Pointers.pStickInventoryIcon, "byte", "0x00");
+                mem.WriteMemory(Pointers.pStickBlowpipe, "byte", "0x00");
                 label19.Text = ("No");
                 label19.ForeColor = Color.FromArgb(80, 80, 80);
                 label19.BackColor = Color.WhiteSmoke;
@@ -1196,18 +846,18 @@ namespace SuperEd
         {
             if (label21.Text != ("Yes"))
             {
-                switch (mem.ReadByte(Pointers.weapon1))
+                switch (mem.ReadByte(Pointers.pWeapon1))
                 {
-                    default: { mem.WriteMemory(Pointers.weapon1, "byte", "0x80"); break; }
-                    case 7: { mem.WriteMemory(Pointers.weapon1, "byte", "0x87"); break; }
-                    case 8: { mem.WriteMemory(Pointers.weapon1, "byte", "0x88"); break; }
-                    case 15: { mem.WriteMemory(Pointers.weapon1, "byte", "0x8F"); break; }
-                    case 112: { mem.WriteMemory(Pointers.weapon1, "byte", "0xF0"); break; }
-                    case 119: { mem.WriteMemory(Pointers.weapon1, "byte", "0xF7"); break; }
-                    case 120: { mem.WriteMemory(Pointers.weapon1, "byte", "0xF8"); break; }
-                    case 127: { mem.WriteMemory(Pointers.weapon1, "byte", "0xFF"); break; }
+                    default: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x80"); break; }
+                    case 7: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x87"); break; }
+                    case 8: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x88"); break; }
+                    case 15: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x8F"); break; }
+                    case 112: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0xF0"); break; }
+                    case 119: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0xF7"); break; }
+                    case 120: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0xF8"); break; }
+                    case 127: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0xFF"); break; }
                 }
-                mem.WriteMemory(Pointers.bowTieInvIcon, "byte", "0x01");
+                mem.WriteMemory(Pointers.pBowtieInventoryIcon, "byte", "0x01");
                 label21.Text = ("Yes");
                 label21.ForeColor = Color.White;
                 label21.BackColor = Color.Coral;
@@ -1223,19 +873,19 @@ namespace SuperEd
         {
             if (label21.Text != ("No"))
             {
-                switch (mem.ReadByte(Pointers.weapon1))
+                switch (mem.ReadByte(Pointers.pWeapon1))
                 {
-                    default: { mem.WriteMemory(Pointers.weapon1, "byte", "0x00"); break; }
-                    case 128: { mem.WriteMemory(Pointers.weapon1, "byte", "0x00"); break; }
-                    case 135: { mem.WriteMemory(Pointers.weapon1, "byte", "0x07"); break; }
-                    case 136: { mem.WriteMemory(Pointers.weapon1, "byte", "0x08"); break; }
-                    case 143: { mem.WriteMemory(Pointers.weapon1, "byte", "0x0F"); break; }
-                    case 240: { mem.WriteMemory(Pointers.weapon1, "byte", "0x70"); break; }
-                    case 247: { mem.WriteMemory(Pointers.weapon1, "byte", "0x77"); break; }
-                    case 248: { mem.WriteMemory(Pointers.weapon1, "byte", "0x78"); break; }
-                    case 255: { mem.WriteMemory(Pointers.weapon1, "byte", "0x7F"); break; }
+                    default: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x00"); break; }
+                    case 128: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x00"); break; }
+                    case 135: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x07"); break; }
+                    case 136: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x08"); break; }
+                    case 143: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x0F"); break; }
+                    case 240: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x70"); break; }
+                    case 247: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x77"); break; }
+                    case 248: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x78"); break; }
+                    case 255: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x7F"); break; }
                 }
-                mem.WriteMemory(Pointers.bowTieInvIcon, "byte", "0x00");
+                mem.WriteMemory(Pointers.pBowtieInventoryIcon, "byte", "0x00");
                 label21.Text = ("No");
                 label21.ForeColor = Color.FromArgb(80, 80, 80);
                 label21.BackColor = Color.WhiteSmoke;
@@ -1252,21 +902,21 @@ namespace SuperEd
         {
             if (label17.Text != ("Yes"))
             {
-                switch (mem.ReadByte(Pointers.weapon1))
+                switch (mem.ReadByte(Pointers.pWeapon1))
                 {
-                    default: { mem.WriteMemory(Pointers.weapon1, "byte", "0x70"); break; }
-                    case 7: { mem.WriteMemory(Pointers.weapon1, "byte", "0x77"); break; }
-                    case 8: { mem.WriteMemory(Pointers.weapon1, "byte", "0x78"); break; }
-                    case 15: { mem.WriteMemory(Pointers.weapon1, "byte", "0x7F"); break; }
-                    case 128: { mem.WriteMemory(Pointers.weapon1, "byte", "0xF0"); break; }
-                    case 135: { mem.WriteMemory(Pointers.weapon1, "byte", "0xF7"); break; }
-                    case 136: { mem.WriteMemory(Pointers.weapon1, "byte", "0xF8"); break; }
-                    case 143: { mem.WriteMemory(Pointers.weapon1, "byte", "0xFF"); break; }
+                    default: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x70"); break; }
+                    case 7: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x77"); break; }
+                    case 8: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x78"); break; }
+                    case 15: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x7F"); break; }
+                    case 128: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0xF0"); break; }
+                    case 135: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0xF7"); break; }
+                    case 136: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0xF8"); break; }
+                    case 143: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0xFF"); break; }
                 }
-                mem.WriteMemory(Pointers.stickInvIcon, "byte", "0x01");
-                mem.WriteMemory(Pointers.stickPogo, "byte", "0x01");
-                mem.WriteMemory(Pointers.stickPogoAttack, "byte", "0x01");
-                mem.WriteMemory(Pointers.stickMoveStoneH, "byte", "0x01");
+                mem.WriteMemory(Pointers.pStickInventoryIcon, "byte", "0x01");
+                mem.WriteMemory(Pointers.pStickPogo, "byte", "0x01");
+                mem.WriteMemory(Pointers.pStickPogoAttack, "byte", "0x01");
+                mem.WriteMemory(Pointers.pStickMoveStoneH, "byte", "0x01");
                 label17.Text = ("Yes");
                 label17.ForeColor = Color.White;
                 label17.BackColor = Color.RosyBrown;
@@ -1282,22 +932,22 @@ namespace SuperEd
         {
             if (label17.Text != ("No"))
             {
-                switch (mem.ReadByte(Pointers.weapon1))
+                switch (mem.ReadByte(Pointers.pWeapon1))
                 {
-                    default: { mem.WriteMemory(Pointers.weapon1, "byte", "0x00"); break; }
-                    case 112: { mem.WriteMemory(Pointers.weapon1, "byte", "0x00"); break; }
-                    case 119: { mem.WriteMemory(Pointers.weapon1, "byte", "0x07"); break; }
-                    case 120: { mem.WriteMemory(Pointers.weapon1, "byte", "0x08"); break; }
-                    case 127: { mem.WriteMemory(Pointers.weapon1, "byte", "0x0F"); break; }
-                    case 240: { mem.WriteMemory(Pointers.weapon1, "byte", "0x80"); break; }
-                    case 247: { mem.WriteMemory(Pointers.weapon1, "byte", "0x87"); break; }
-                    case 248: { mem.WriteMemory(Pointers.weapon1, "byte", "0x88"); break; }
-                    case 255: { mem.WriteMemory(Pointers.weapon1, "byte", "0x8F"); break; }
+                    default: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x00"); break; }
+                    case 112: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x00"); break; }
+                    case 119: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x07"); break; }
+                    case 120: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x08"); break; }
+                    case 127: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x0F"); break; }
+                    case 240: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x80"); break; }
+                    case 247: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x87"); break; }
+                    case 248: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x88"); break; }
+                    case 255: { mem.WriteMemory(Pointers.pWeapon1, "byte", "0x8F"); break; }
                 }
-                mem.WriteMemory(Pointers.stickInvIcon, "byte", "0x00");
-                mem.WriteMemory(Pointers.stickPogo, "byte", "0x00");
-                mem.WriteMemory(Pointers.stickPogoAttack, "byte", "0x00");
-                mem.WriteMemory(Pointers.stickMoveStoneH, "byte", "0x00");
+                mem.WriteMemory(Pointers.pStickInventoryIcon, "byte", "0x00");
+                mem.WriteMemory(Pointers.pStickPogo, "byte", "0x00");
+                mem.WriteMemory(Pointers.pStickPogoAttack, "byte", "0x00");
+                mem.WriteMemory(Pointers.pStickMoveStoneH, "byte", "0x00");
                 label17.Text = ("No");
                 label17.ForeColor = Color.FromArgb(80, 80, 80);
                 label17.BackColor = Color.WhiteSmoke;
@@ -1314,12 +964,12 @@ namespace SuperEd
         {
             if (label18.Text != ("Yes"))
             {
-                switch (mem.ReadByte(Pointers.weapon2))
+                switch (mem.ReadByte(Pointers.pWeapon2))
                 {
-                    default: { mem.WriteMemory(Pointers.weapon2, "byte", "0x01"); break; }
-                    case 2: { mem.WriteMemory(Pointers.weapon2, "byte", "0x03"); break; }
+                    default: { mem.WriteMemory(Pointers.pWeapon2, "byte", "0x01"); break; }
+                    case 2: { mem.WriteMemory(Pointers.pWeapon2, "byte", "0x03"); break; }
                 }
-                mem.WriteMemory(Pointers.divingHelmetInvIcon, "byte", "0x01");
+                mem.WriteMemory(Pointers.pDivinghelmetInventoryIcon, "byte", "0x01");
                 label18.Text = ("Yes");
                 label18.ForeColor = Color.White;
                 label18.BackColor = Color.CadetBlue;
@@ -1335,13 +985,13 @@ namespace SuperEd
         {
             if (label18.Text != ("No"))
             {
-                switch (mem.ReadByte(Pointers.weapon2))
+                switch (mem.ReadByte(Pointers.pWeapon2))
                 {
-                    default: { mem.WriteMemory(Pointers.weapon2, "byte", "0x00"); break; }
-                    case 1: { mem.WriteMemory(Pointers.weapon2, "byte", "0x00"); break; }
-                    case 3: { mem.WriteMemory(Pointers.weapon2, "byte", "0x02"); break; }
+                    default: { mem.WriteMemory(Pointers.pWeapon2, "byte", "0x00"); break; }
+                    case 1: { mem.WriteMemory(Pointers.pWeapon2, "byte", "0x00"); break; }
+                    case 3: { mem.WriteMemory(Pointers.pWeapon2, "byte", "0x02"); break; }
                 }
-                mem.WriteMemory(Pointers.divingHelmetInvIcon, "byte", "0x00");
+                mem.WriteMemory(Pointers.pDivinghelmetInventoryIcon, "byte", "0x00");
                 label18.Text = ("No");
                 label18.ForeColor = Color.FromArgb(80, 80, 80);
                 label18.BackColor = Color.WhiteSmoke;
@@ -1358,12 +1008,12 @@ namespace SuperEd
         {
             if (label20.Text != ("Yes"))
             {
-                switch (mem.ReadByte(Pointers.weapon2))
+                switch (mem.ReadByte(Pointers.pWeapon2))
                 {
-                    default: { mem.WriteMemory(Pointers.weapon2, "byte", "0x02"); break; }
-                    case 1: { mem.WriteMemory(Pointers.weapon2, "byte", "0x03"); break; }
+                    default: { mem.WriteMemory(Pointers.pWeapon2, "byte", "0x02"); break; }
+                    case 1: { mem.WriteMemory(Pointers.pWeapon2, "byte", "0x03"); break; }
                 }
-                mem.WriteMemory(Pointers.chameleonBeltInvIcon, "byte", "0x01");
+                mem.WriteMemory(Pointers.pChameleonbeltInventoryIcon, "byte", "0x01");
                 label20.Text = ("Yes");
                 label20.ForeColor = Color.White;
                 label20.BackColor = Color.MediumSeaGreen;
@@ -1379,13 +1029,13 @@ namespace SuperEd
         {
             if (label20.Text != ("No"))
             {
-                switch (mem.ReadByte(Pointers.weapon2))
+                switch (mem.ReadByte(Pointers.pWeapon2))
                 {
-                    default: { mem.WriteMemory(Pointers.weapon2, "byte", "0x00"); break; }
-                    case 2: { mem.WriteMemory(Pointers.weapon2, "byte", "0x00"); break; }
-                    case 3: { mem.WriteMemory(Pointers.weapon2, "byte", "0x01"); break; }
+                    default: { mem.WriteMemory(Pointers.pWeapon2, "byte", "0x00"); break; }
+                    case 2: { mem.WriteMemory(Pointers.pWeapon2, "byte", "0x00"); break; }
+                    case 3: { mem.WriteMemory(Pointers.pWeapon2, "byte", "0x01"); break; }
                 }
-                mem.WriteMemory(Pointers.chameleonBeltInvIcon, "byte", "0x00");
+                mem.WriteMemory(Pointers.pChameleonbeltInventoryIcon, "byte", "0x00");
                 label20.Text = ("No");
                 label20.ForeColor = Color.FromArgb(80, 80, 80);
                 label20.BackColor = Color.WhiteSmoke;
@@ -1402,39 +1052,39 @@ namespace SuperEd
         {
             if (label23.Text != ("16"))
             {
-                switch (mem.ReadByte(Pointers.redSpadesCurrent))
+                switch (mem.ReadByte(Pointers.pRedspadesCurrent))
                 {
-                    default: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x01"); break; }
-                    case 1: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x02"); break; }
-                    case 2: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x03"); break; }
-                    case 3: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x04"); break; }
-                    case 4: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x05"); break; }
-                    case 5: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x06"); break; }
-                    case 6: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x07"); break; }
-                    case 7: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x08"); break; }
-                    case 8: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x09"); break; }
-                    case 9: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x0A"); break; }
-                    case 10: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x0B"); break; }
-                    case 11: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x0C"); break; }
-                    case 12: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x0D"); break; }
-                    case 13: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x0E"); break; }
-                    case 14: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x0F"); break; }
-                    case 15: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x10"); break; }
+                    default: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x01"); break; }
+                    case 1: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x02"); break; }
+                    case 2: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x03"); break; }
+                    case 3: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x04"); break; }
+                    case 4: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x05"); break; }
+                    case 5: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x06"); break; }
+                    case 6: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x07"); break; }
+                    case 7: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x08"); break; }
+                    case 8: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x09"); break; }
+                    case 9: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x0A"); break; }
+                    case 10: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x0B"); break; }
+                    case 11: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x0C"); break; }
+                    case 12: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x0D"); break; }
+                    case 13: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x0E"); break; }
+                    case 14: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x0F"); break; }
+                    case 15: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x10"); break; }
                 }
                 if (Int32.Parse(label23.Text) >= Int32.Parse(label35.Text))
                 {
-                    switch (mem.ReadByte(Pointers.redSpadesCurrent))
+                    switch (mem.ReadByte(Pointers.pRedspadesCurrent))
                     {
-                        case 7: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x07"); break; }
-                        case 8: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x08"); break; }
-                        case 9: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x09"); break; }
-                        case 10: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x0A"); break; }
-                        case 11: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x0B"); break; }
-                        case 12: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x0C"); break; }
-                        case 13: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x0D"); break; }
-                        case 14: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x0E"); break; }
-                        case 15: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x0F"); break; }
-                        case 16: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x10"); break; }
+                        case 7: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x07"); break; }
+                        case 8: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x08"); break; }
+                        case 9: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x09"); break; }
+                        case 10: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x0A"); break; }
+                        case 11: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x0B"); break; }
+                        case 12: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x0C"); break; }
+                        case 13: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x0D"); break; }
+                        case 14: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x0E"); break; }
+                        case 15: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x0F"); break; }
+                        case 16: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x10"); break; }
                     }
                 }
             }
@@ -1443,25 +1093,25 @@ namespace SuperEd
         {
             if (label23.Text != ("0"))
             {
-                switch (mem.ReadByte(Pointers.redSpadesCurrent))
+                switch (mem.ReadByte(Pointers.pRedspadesCurrent))
                 {
-                    default: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x00"); break; }
-                    case 1: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x00"); break; }
-                    case 2: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x01"); break; }
-                    case 3: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x02"); break; }
-                    case 4: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x03"); break; }
-                    case 5: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x04"); break; }
-                    case 6: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x05"); break; }
-                    case 7: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x06"); break; }
-                    case 8: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x07"); break; }
-                    case 9: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x08"); break; }
-                    case 10: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x09"); break; }
-                    case 11: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x0A"); break; }
-                    case 12: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x0B"); break; }
-                    case 13: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x0C"); break; }
-                    case 14: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x0D"); break; }
-                    case 15: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x0E"); break; }
-                    case 16: { mem.WriteMemory(Pointers.redSpadesCurrent, "byte", "0x0F"); break; }
+                    default: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x00"); break; }
+                    case 1: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x00"); break; }
+                    case 2: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x01"); break; }
+                    case 3: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x02"); break; }
+                    case 4: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x03"); break; }
+                    case 5: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x04"); break; }
+                    case 6: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x05"); break; }
+                    case 7: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x06"); break; }
+                    case 8: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x07"); break; }
+                    case 9: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x08"); break; }
+                    case 10: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x09"); break; }
+                    case 11: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x0A"); break; }
+                    case 12: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x0B"); break; }
+                    case 13: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x0C"); break; }
+                    case 14: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x0D"); break; }
+                    case 15: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x0E"); break; }
+                    case 16: { mem.WriteMemory(Pointers.pRedspadesCurrent, "byte", "0x0F"); break; }
                 }
             }
         }
@@ -1470,24 +1120,24 @@ namespace SuperEd
         {
             if (label35.Text != ("16"))
             {
-                switch (mem.ReadByte(Pointers.redSpadesMax))
+                switch (mem.ReadByte(Pointers.pRedspadesMax))
                 {
-                    default: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x01"); break; }
-                    case 1: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x02"); break; }
-                    case 2: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x03"); break; }
-                    case 3: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x04"); break; }
-                    case 4: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x05"); break; }
-                    case 5: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x06"); break; }
-                    case 6: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x07"); break; }
-                    case 7: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x08"); break; }
-                    case 8: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x09"); break; }
-                    case 9: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x0A"); break; }
-                    case 10: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x0B"); break; }
-                    case 11: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x0C"); break; }
-                    case 12: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x0D"); break; }
-                    case 13: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x0E"); break; }
-                    case 14: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x0F"); break; }
-                    case 15: { mem.WriteMemory(Pointers.redSpadesMax, "byte", "0x10"); break; }
+                    default: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x01"); break; }
+                    case 1: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x02"); break; }
+                    case 2: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x03"); break; }
+                    case 3: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x04"); break; }
+                    case 4: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x05"); break; }
+                    case 5: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x06"); break; }
+                    case 6: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x07"); break; }
+                    case 7: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x08"); break; }
+                    case 8: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x09"); break; }
+                    case 9: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x0A"); break; }
+                    case 10: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x0B"); break; }
+                    case 11: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x0C"); break; }
+                    case 12: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x0D"); break; }
+                    case 13: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x0E"); break; }
+                    case 14: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x0F"); break; }
+                    case 15: { mem.WriteMemory(Pointers.pRedspadesMax, "byte", "0x10"); break; }
                 }
             }
         }
@@ -1497,12 +1147,12 @@ namespace SuperEd
             while (true)
             {
                 System.Threading.Thread.Sleep(500);
-                pID = mem.GetProcIdFromName(Pointers.EXE);
+                pID = mem.GetProcIdFromName(Pointers.executableName);
                 if (pID > 0)
                 {
-                    processRunning = mem.OpenProcess(Pointers.EXE);
+                    processRunning = mem.OpenProcess(Pointers.executableName);
 
-                    Console.WriteLine(mem.ReadString(Pointers.titleScreenCheck).ToLower());
+                    Console.WriteLine(mem.ReadString(Pointers.pTitleScreenCheck).ToLower());
 
                     if (InvokeRequired)
                     {
@@ -1512,22 +1162,22 @@ namespace SuperEd
                             label1.Text = (" Game Status: Active");
                             if (!IsInTitleScreen())
                             {
-                                switch (mem.ReadString(Pointers.levelName).ToLower())
+                                switch (mem.ReadString(Pointers.pLevelName).ToLower())
                                 {
-                                    case ("totalski"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: totalSki (Ski Slope)"); break; }
-                                    case ("sud0"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: sud0 (South Plain)"); break; }
-                                    case ("cavedoc"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: cavedoc (Doc's Cave)"); break; }
-                                    case ("carota"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: Carota (Vegetable's HQ)"); break; }
-                                    case ("north"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: north (North Plain)"); break; }
+                                    case ("Totalski"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: Totalski (Ski Slope)"); break; }
+                                    case ("Sud0"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: Sud0 (South Plain)"); break; }
+                                    case ("Cavedoc"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: Cavedoc (Doc's Cave)"); break; }
+                                    case ("Carota"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: Carota (Vegetable's HQ)"); break; }
+                                    case ("North"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: North (North Plain)"); break; }
                                     case ("lecanyon"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: LeCanyon (Canyon)"); break; }
                                     case ("cock01"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: cock01 (Glacier Cocktail)"); break; }
-                                    case ("pyramide"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: pyramide (Pyramid)"); break; }
-                                    case ("marmite"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: marmite (Pressure Cooker)"); break; }
+                                    case ("Pyramide"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: Pyramide (Pyramid)"); break; }
+                                    case ("Marmite"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: Marmite (Pressure Cooker)"); break; }
                                     case ("land"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: land (Grogh's HQ)"); break; }
                                     case ("outro"): { Form2.SetMonitorValues("CurrentLevel", "Current Level: outro (Outro)"); break; }
                                 }
-                                Form2.SetMonitorValues("CurrentSaveGame", "Current Save Game: " + mem.ReadString(Pointers.saveGameName));
-                                switch (mem.ReadInt(Pointers.springs))
+                                Form2.SetMonitorValues("CurrentSaveGame", "Current Save Game: " + mem.ReadString(Pointers.pSaveGameName));
+                                switch (mem.ReadInt(Pointers.pSprings))
                                 {
                                     default: { Form2.SetMonitorValues("Springs", "Springs: 0/6"); label6.Text = ("0"); break; }
                                     case 65536: { Form2.SetMonitorValues("Springs", "Springs: 1/6"); label6.Text = ("1"); break; }
@@ -1561,15 +1211,15 @@ namespace SuperEd
                                     button5.Enabled = true;
                                     button5.BackColor = Color.FromArgb(80, 80, 80);
                                 }
-                                switch (mem.ReadInt(Pointers.pinwheels))
+                                switch (mem.ReadInt(Pointers.pPinwheels))
                                 {
-                                    default: { Form2.SetMonitorValues("Pinwheels", "Pinwheels: 0/6"); label8.Text = ("0"); break; }
-                                    case 65536: { Form2.SetMonitorValues("Pinwheels", "Pinwheels: 1/6"); label8.Text = ("1"); break; }
-                                    case 131072: { Form2.SetMonitorValues("Pinwheels", "Pinwheels: 2/6"); label8.Text = ("2"); break; }
-                                    case 196608: { Form2.SetMonitorValues("Pinwheels", "Pinwheels: 3/6"); label8.Text = ("3"); break; }
-                                    case 262144: { Form2.SetMonitorValues("Pinwheels", "Pinwheels: 4/6"); label8.Text = ("4"); break; }
-                                    case 327680: { Form2.SetMonitorValues("Pinwheels", "Pinwheels: 5/6"); label8.Text = ("5"); break; }
-                                    case 393216: { Form2.SetMonitorValues("Pinwheels", "Pinwheels: 6/6"); label8.Text = ("6"); break; }
+                                    default: { Form2.SetMonitorValues("pPinwheels", "pPinwheels: 0/6"); label8.Text = ("0"); break; }
+                                    case 65536: { Form2.SetMonitorValues("pPinwheels", "pPinwheels: 1/6"); label8.Text = ("1"); break; }
+                                    case 131072: { Form2.SetMonitorValues("pPinwheels", "pPinwheels: 2/6"); label8.Text = ("2"); break; }
+                                    case 196608: { Form2.SetMonitorValues("pPinwheels", "pPinwheels: 3/6"); label8.Text = ("3"); break; }
+                                    case 262144: { Form2.SetMonitorValues("pPinwheels", "pPinwheels: 4/6"); label8.Text = ("4"); break; }
+                                    case 327680: { Form2.SetMonitorValues("pPinwheels", "pPinwheels: 5/6"); label8.Text = ("5"); break; }
+                                    case 393216: { Form2.SetMonitorValues("pPinwheels", "pPinwheels: 6/6"); label8.Text = ("6"); break; }
                                 }
                                 label8.ForeColor = Color.White;
                                 label8.BackColor = Color.SandyBrown;
@@ -1595,15 +1245,15 @@ namespace SuperEd
                                     button7.Enabled = true;
                                     button7.BackColor = Color.SandyBrown;
                                 }
-                                switch (mem.ReadInt(Pointers.jumpingStones))
+                                switch (mem.ReadInt(Pointers.pJumpingStones))
                                 {
-                                    default: { Form2.SetMonitorValues("JumpingStones", "Jumping Stones: 0/6"); label11.Text = ("0"); break; }
-                                    case 65536: { Form2.SetMonitorValues("JumpingStones", "Jumping Stones: 1/6"); label11.Text = ("1"); break; }
-                                    case 131072: { Form2.SetMonitorValues("JumpingStones", "Jumping Stones: 2/6"); label11.Text = ("2"); break; }
-                                    case 196608: { Form2.SetMonitorValues("JumpingStones", "Jumping Stones: 3/6"); label11.Text = ("3"); break; }
-                                    case 262144: { Form2.SetMonitorValues("JumpingStones", "Jumping Stones: 4/6"); label11.Text = ("4"); break; }
-                                    case 327680: { Form2.SetMonitorValues("JumpingStones", "Jumping Stones: 5/6"); label11.Text = ("5"); break; }
-                                    case 393216: { Form2.SetMonitorValues("JumpingStones", "Jumping Stones: 6/6"); label11.Text = ("6"); break; }
+                                    default: { Form2.SetMonitorValues("pJumpingStones", "Jumping Stones: 0/6"); label11.Text = ("0"); break; }
+                                    case 65536: { Form2.SetMonitorValues("pJumpingStones", "Jumping Stones: 1/6"); label11.Text = ("1"); break; }
+                                    case 131072: { Form2.SetMonitorValues("pJumpingStones", "Jumping Stones: 2/6"); label11.Text = ("2"); break; }
+                                    case 196608: { Form2.SetMonitorValues("pJumpingStones", "Jumping Stones: 3/6"); label11.Text = ("3"); break; }
+                                    case 262144: { Form2.SetMonitorValues("pJumpingStones", "Jumping Stones: 4/6"); label11.Text = ("4"); break; }
+                                    case 327680: { Form2.SetMonitorValues("pJumpingStones", "Jumping Stones: 5/6"); label11.Text = ("5"); break; }
+                                    case 393216: { Form2.SetMonitorValues("pJumpingStones", "Jumping Stones: 6/6"); label11.Text = ("6"); break; }
                                 }
                                 label11.ForeColor = Color.White;
                                 label11.BackColor = Color.LightSlateGray;
@@ -1629,15 +1279,15 @@ namespace SuperEd
                                     button10.Enabled = true;
                                     button10.BackColor = Color.LightSlateGray;
                                 }
-                                switch (mem.ReadInt(Pointers.feathers))
+                                switch (mem.ReadInt(Pointers.pFeathers))
                                 {
-                                    default: { Form2.SetMonitorValues("Feathers", "Feathers: 0/6"); label12.Text = ("0"); break; }
-                                    case 65536: { Form2.SetMonitorValues("Feathers", "Feathers: 1/6"); label12.Text = ("1"); break; }
-                                    case 131072: { Form2.SetMonitorValues("Feathers", "Feathers: 2/6"); label12.Text = ("2"); break; }
-                                    case 196608: { Form2.SetMonitorValues("Feathers", "Feathers: 3/6"); label12.Text = ("3"); break; }
-                                    case 262144: { Form2.SetMonitorValues("Feathers", "Feathers: 4/6"); label12.Text = ("4"); break; }
-                                    case 327680: { Form2.SetMonitorValues("Feathers", "Feathers: 5/6"); label12.Text = ("5"); break; }
-                                    case 393216: { Form2.SetMonitorValues("Feathers", "Feathers: 6/6"); label12.Text = ("6"); break; }
+                                    default: { Form2.SetMonitorValues("pFeathers", "pFeathers: 0/6"); label12.Text = ("0"); break; }
+                                    case 65536: { Form2.SetMonitorValues("pFeathers", "pFeathers: 1/6"); label12.Text = ("1"); break; }
+                                    case 131072: { Form2.SetMonitorValues("pFeathers", "pFeathers: 2/6"); label12.Text = ("2"); break; }
+                                    case 196608: { Form2.SetMonitorValues("pFeathers", "pFeathers: 3/6"); label12.Text = ("3"); break; }
+                                    case 262144: { Form2.SetMonitorValues("pFeathers", "pFeathers: 4/6"); label12.Text = ("4"); break; }
+                                    case 327680: { Form2.SetMonitorValues("pFeathers", "pFeathers: 5/6"); label12.Text = ("5"); break; }
+                                    case 393216: { Form2.SetMonitorValues("pFeathers", "pFeathers: 6/6"); label12.Text = ("6"); break; }
                                 }
                                 label12.ForeColor = Color.White;
                                 label12.BackColor = Color.Plum;
@@ -1663,15 +1313,15 @@ namespace SuperEd
                                     button11.Enabled = true;
                                     button11.BackColor = Color.Plum;
                                 }
-                                switch (mem.ReadInt(Pointers.dominoes))
+                                switch (mem.ReadInt(Pointers.pDominoes))
                                 {
-                                    default: { Form2.SetMonitorValues("Dominoes", "Dominoes: 0/6"); label15.Text = ("0"); break; }
-                                    case 65536: { Form2.SetMonitorValues("Dominoes", "Dominoes: 1/6"); label15.Text = ("1"); break; }
-                                    case 131072: { Form2.SetMonitorValues("Dominoes", "Dominoes: 2/6"); label15.Text = ("2"); break; }
-                                    case 196608: { Form2.SetMonitorValues("Dominoes", "Dominoes: 3/6"); label15.Text = ("3"); break; }
-                                    case 262144: { Form2.SetMonitorValues("Dominoes", "Dominoes: 4/6"); label15.Text = ("4"); break; }
-                                    case 327680: { Form2.SetMonitorValues("Dominoes", "Dominoes: 5/6"); label15.Text = ("5"); break; }
-                                    case 393216: { Form2.SetMonitorValues("Dominoes", "Dominoes: 6/6"); label15.Text = ("6"); break; }
+                                    default: { Form2.SetMonitorValues("pDominoes", "pDominoes: 0/6"); label15.Text = ("0"); break; }
+                                    case 65536: { Form2.SetMonitorValues("pDominoes", "pDominoes: 1/6"); label15.Text = ("1"); break; }
+                                    case 131072: { Form2.SetMonitorValues("pDominoes", "pDominoes: 2/6"); label15.Text = ("2"); break; }
+                                    case 196608: { Form2.SetMonitorValues("pDominoes", "pDominoes: 3/6"); label15.Text = ("3"); break; }
+                                    case 262144: { Form2.SetMonitorValues("pDominoes", "pDominoes: 4/6"); label15.Text = ("4"); break; }
+                                    case 327680: { Form2.SetMonitorValues("pDominoes", "pDominoes: 5/6"); label15.Text = ("5"); break; }
+                                    case 393216: { Form2.SetMonitorValues("pDominoes", "pDominoes: 6/6"); label15.Text = ("6"); break; }
                                 }
                                 label15.ForeColor = Color.White;
                                 label15.BackColor = Color.FromArgb(128, 64, 0);
@@ -1697,15 +1347,15 @@ namespace SuperEd
                                     button14.Enabled = true;
                                     button14.BackColor = Color.FromArgb(128, 64, 0);
                                 }
-                                switch (mem.ReadInt(Pointers.piggyBanks))
+                                switch (mem.ReadInt(Pointers.pPiggyBanks))
                                 {
-                                    default: { Form2.SetMonitorValues("Pointers.piggyBanks", "Piggy Banks: 0/6"); label16.Text = ("0"); break; }
-                                    case 65536: { Form2.SetMonitorValues("Pointers.piggyBanks", "Piggy Banks: 1/6"); label16.Text = ("1"); break; }
-                                    case 131072: { Form2.SetMonitorValues("Pointers.piggyBanks", "Piggy Banks: 2/6"); label16.Text = ("2"); break; }
-                                    case 196608: { Form2.SetMonitorValues("Pointers.piggyBanks", "Piggy Banks: 3/6"); label16.Text = ("3"); break; }
-                                    case 262144: { Form2.SetMonitorValues("Pointers.piggyBanks", "Piggy Banks: 4/6"); label16.Text = ("4"); break; }
-                                    case 327680: { Form2.SetMonitorValues("Pointers.piggyBanks", "Piggy Banks: 5/6"); label16.Text = ("5"); break; }
-                                    case 393216: { Form2.SetMonitorValues("Pointers.piggyBanks", "Piggy Banks: 6/6"); label16.Text = ("6"); break; }
+                                    default: { Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks: 0/6"); label16.Text = ("0"); break; }
+                                    case 65536: { Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks: 1/6"); label16.Text = ("1"); break; }
+                                    case 131072: { Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks: 2/6"); label16.Text = ("2"); break; }
+                                    case 196608: { Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks: 3/6"); label16.Text = ("3"); break; }
+                                    case 262144: { Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks: 4/6"); label16.Text = ("4"); break; }
+                                    case 327680: { Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks: 5/6"); label16.Text = ("5"); break; }
+                                    case 393216: { Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks: 6/6"); label16.Text = ("6"); break; }
                                 }
                                 label16.ForeColor = Color.White;
                                 label16.BackColor = Color.DeepPink;
@@ -1731,7 +1381,7 @@ namespace SuperEd
                                     button15.Enabled = true;
                                     button15.BackColor = Color.DeepPink;
                                 }
-                                switch (mem.ReadByte(Pointers.weapon1))
+                                switch (mem.ReadByte(Pointers.pWeapon1))
                                 {
                                     default:
                                         {
@@ -2438,7 +2088,7 @@ namespace SuperEd
                                             break;
                                         }
                                 }
-                                switch (mem.ReadByte(Pointers.weapon2))
+                                switch (mem.ReadByte(Pointers.pWeapon2))
                                 {
                                     default:
                                         {
@@ -2537,10 +2187,10 @@ namespace SuperEd
                                             break;
                                         }
                                 }
-                                Form2.SetMonitorValues("PosX", ("Position X: ") + mem.ReadFloat(Pointers.posX).ToString());
-                                Form2.SetMonitorValues("PosY", ("Position Y: ") + mem.ReadFloat(Pointers.posY).ToString());
-                                Form2.SetMonitorValues("PosZ", ("Position Z: ") + mem.ReadFloat(Pointers.posZ).ToString());
-                                switch (mem.ReadByte(Pointers.redSpadesCurrent))
+                                Form2.SetMonitorValues("PosX", ("Position X: ") + mem.ReadFloat(Pointers.pPosX).ToString());
+                                Form2.SetMonitorValues("PosY", ("Position Y: ") + mem.ReadFloat(Pointers.pPosY).ToString());
+                                Form2.SetMonitorValues("PosZ", ("Position Z: ") + mem.ReadFloat(Pointers.pPosZ).ToString());
+                                switch (mem.ReadByte(Pointers.pRedspadesCurrent))
                                 {
                                     default: { Form2.SetMonitorValues("RedSpadesCurrent", "Red Spades Current: 0"); label23.Text = ("0"); break; }
                                     case 1: { Form2.SetMonitorValues("RedSpadesCurrent", "Red Spades Current: 1"); label23.Text = ("1"); break; }
@@ -2584,7 +2234,7 @@ namespace SuperEd
                                     button22.Enabled = true;
                                     button22.BackColor = Color.Crimson;
                                 }
-                                switch (mem.ReadByte(Pointers.redSpadesMax))
+                                switch (mem.ReadByte(Pointers.pRedspadesMax))
                                 {
                                     default: { Form2.SetMonitorValues("RedSpadesMax", "Red Spades Max: 0"); label35.Text = ("0"); break; }
                                     case 1: { Form2.SetMonitorValues("RedSpadesMax", "Red Spades Max: 1"); label35.Text = ("1"); break; }
@@ -2622,70 +2272,70 @@ namespace SuperEd
                                     button31.Enabled = true;
                                     button31.BackColor = Color.Crimson;
                                 }
-                                switch (mem.ReadInt(Pointers.silverSpadesTEXT))
+                                switch (mem.ReadInt(Pointers.pSilverspadesText))
                                 {
                                     default:
                                         {
-                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 0/10 (" + mem.ReadString(Pointers.levelName) + (")"));
+                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 0/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("0"); break;
                                         }
                                     case 2560:
                                         {
-                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 0/10 (" + mem.ReadString(Pointers.levelName) + (")"));
+                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 0/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("0"); break;
                                         }
                                     case 2561:
                                         {
-                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 1/10 (" + mem.ReadString(Pointers.levelName) + (")"));
+                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 1/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("1"); break;
                                         }
                                     case 2562:
                                         {
-                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 2/10 (" + mem.ReadString(Pointers.levelName) + (")"));
+                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 2/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("2"); break;
                                         }
                                     case 2563:
                                         {
-                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 3/10 (" + mem.ReadString(Pointers.levelName) + (")"));
+                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 3/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("3"); break;
                                         }
                                     case 2564:
                                         {
-                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 4/10 (" + mem.ReadString(Pointers.levelName) + (")"));
+                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 4/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("4"); break;
                                         }
                                     case 2565:
                                         {
-                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 5/10 (" + mem.ReadString(Pointers.levelName) + (")"));
+                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 5/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("5"); break;
                                         }
                                     case 2566:
                                         {
-                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 6/10 (" + mem.ReadString(Pointers.levelName) + (")"));
+                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 6/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("6"); break;
                                         }
                                     case 2567:
                                         {
-                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 7/10 (" + mem.ReadString(Pointers.levelName) + (")"));
+                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 7/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("7"); break;
                                         }
                                     case 2568:
                                         {
-                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 8/10 (" + mem.ReadString(Pointers.levelName) + (")"));
+                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 8/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("8"); break;
                                         }
                                     case 2569:
                                         {
-                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 9/10 (" + mem.ReadString(Pointers.levelName) + (")"));
+                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 9/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("9"); break;
                                         }
                                     case 2570:
                                         {
-                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 10/10 (" + mem.ReadString(Pointers.levelName) + (")"));
+                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 10/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("10"); break;
                                         }
                                 }
-                                if (mem.ReadString(Pointers.levelName) != ("land") && mem.ReadString(Pointers.levelName) != ("LAND") && mem.ReadString(Pointers.levelName) != ("outro") && mem.ReadString(Pointers.levelName) != ("OUTRO"))
+                                if (mem.ReadString(Pointers.pLevelName) != ("land") && mem.ReadString(Pointers.pLevelName) != ("LAND") && mem.ReadString(Pointers.pLevelName) != ("outro") && mem.ReadString(Pointers.pLevelName) != ("OUTRO"))
                                 {
                                     label4.ForeColor = Color.White;
                                     label4.BackColor = Color.DarkGray;
@@ -2718,12 +2368,12 @@ namespace SuperEd
                                 checkBox1.Enabled = true;
                                 checkBox2.Enabled = true;
                                 checkBox3.Enabled = true;
-                                if (checkBox1.Checked) { mem.WriteMemory(Pointers.invincible, "bytes", "0x90,0x90,0x90"); }
-                                else { mem.WriteMemory(Pointers.invincible, "bytes", "0x88,0x41,0x14"); }
-                                if (checkBox2.Checked) { mem.WriteMemory(Pointers.modefly, "bytes", "0x01"); }
-                                else { mem.WriteMemory(Pointers.modefly, "bytes", "0x00"); }
-                                if (mem.ReadByte(Pointers.weapon1) != 255 || mem.ReadByte(Pointers.weapon2) != 3) { checkBox3.Checked = false; }
-                                else if (mem.ReadByte(Pointers.weapon1) == 255 && mem.ReadByte(Pointers.weapon2) == 3) { checkBox3.Checked = true; }
+                                if (checkBox1.Checked) { mem.WriteMemory(Pointers.pInvincible, "bytes", "0x90,0x90,0x90"); }
+                                else { mem.WriteMemory(Pointers.pInvincible, "bytes", "0x88,0x41,0x14"); }
+                                if (checkBox2.Checked) { mem.WriteMemory(Pointers.pModefly, "bytes", "0x01"); }
+                                else { mem.WriteMemory(Pointers.pModefly, "bytes", "0x00"); }
+                                if (mem.ReadByte(Pointers.pWeapon1) != 255 || mem.ReadByte(Pointers.pWeapon2) != 3) { checkBox3.Checked = false; }
+                                else if (mem.ReadByte(Pointers.pWeapon1) == 255 && mem.ReadByte(Pointers.pWeapon2) == 3) { checkBox3.Checked = true; }
                             }
                             else
                             {
@@ -2738,7 +2388,7 @@ namespace SuperEd
                                 button4.BackColor = Color.WhiteSmoke;
                                 button5.Enabled = false;
                                 button5.BackColor = Color.WhiteSmoke;
-                                Form2.SetMonitorValues("Pinwheels", "Pinwheels: 0");
+                                Form2.SetMonitorValues("pPinwheels", "pPinwheels: 0");
                                 label8.Text = ("0");
                                 label8.ForeColor = Color.FromArgb(80, 80, 80);
                                 label8.BackColor = Color.WhiteSmoke;
@@ -2747,7 +2397,7 @@ namespace SuperEd
                                 button6.BackColor = Color.WhiteSmoke;
                                 button7.Enabled = false;
                                 button7.BackColor = Color.WhiteSmoke;
-                                Form2.SetMonitorValues("JumpingStones", "Jumping Stones: 0");
+                                Form2.SetMonitorValues("pJumpingStones", "Jumping Stones: 0");
                                 label11.Text = ("0");
                                 label11.ForeColor = Color.FromArgb(80, 80, 80);
                                 label11.BackColor = Color.WhiteSmoke;
@@ -2756,7 +2406,7 @@ namespace SuperEd
                                 button8.BackColor = Color.WhiteSmoke;
                                 button10.Enabled = false;
                                 button10.BackColor = Color.WhiteSmoke;
-                                Form2.SetMonitorValues("Feathers", "Feathers: 0");
+                                Form2.SetMonitorValues("pFeathers", "pFeathers: 0");
                                 label12.Text = ("0");
                                 label12.ForeColor = Color.FromArgb(80, 80, 80);
                                 label12.BackColor = Color.WhiteSmoke;
@@ -2765,7 +2415,7 @@ namespace SuperEd
                                 button9.BackColor = Color.WhiteSmoke;
                                 button11.Enabled = false;
                                 button11.BackColor = Color.WhiteSmoke;
-                                Form2.SetMonitorValues("Dominoes", "Dominoes: 0");
+                                Form2.SetMonitorValues("pDominoes", "pDominoes: 0");
                                 label15.Text = ("0");
                                 label15.ForeColor = Color.FromArgb(80, 80, 80);
                                 label15.BackColor = Color.WhiteSmoke;
@@ -2774,7 +2424,7 @@ namespace SuperEd
                                 button12.BackColor = Color.WhiteSmoke;
                                 button14.Enabled = false;
                                 button14.BackColor = Color.WhiteSmoke;
-                                Form2.SetMonitorValues("Pointers.piggyBanks", "Piggy Banks: 0");
+                                Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks: 0");
                                 label16.Text = ("0");
                                 label16.ForeColor = Color.FromArgb(80, 80, 80);
                                 label16.BackColor = Color.WhiteSmoke;
@@ -2858,7 +2508,7 @@ namespace SuperEd
                                 panel32.BackColor = Color.WhiteSmoke;
                                 button31.Enabled = false;
                                 button31.BackColor = Color.WhiteSmoke;
-                                Form2.SetMonitorValues("SilverSpades", "Silver Spades: 0");
+                                Form2.SetMonitorValues("pSilverspades", "Silver Spades: 0");
                                 label4.Text = ("0");
                                 label4.ForeColor = Color.FromArgb(80, 80, 80);
                                 label4.BackColor = Color.WhiteSmoke;
@@ -2897,7 +2547,7 @@ namespace SuperEd
                             button4.BackColor = Color.WhiteSmoke;
                             button5.Enabled = false;
                             button5.BackColor = Color.WhiteSmoke;
-                            Form2.SetMonitorValues("Pinwheels", "Pinwheels:");
+                            Form2.SetMonitorValues("pPinwheels", "pPinwheels:");
                             label8.Text = ("");
                             label8.ForeColor = Color.FromArgb(80, 80, 80);
                             label8.BackColor = Color.WhiteSmoke;
@@ -2906,7 +2556,7 @@ namespace SuperEd
                             button6.BackColor = Color.WhiteSmoke;
                             button7.Enabled = false;
                             button7.BackColor = Color.WhiteSmoke;
-                            Form2.SetMonitorValues("JumpingStones", "Jumping Stones:");
+                            Form2.SetMonitorValues("pJumpingStones", "Jumping Stones:");
                             label11.Text = ("");
                             label11.ForeColor = Color.FromArgb(80, 80, 80);
                             label11.BackColor = Color.WhiteSmoke;
@@ -2915,7 +2565,7 @@ namespace SuperEd
                             button8.BackColor = Color.WhiteSmoke;
                             button10.Enabled = false;
                             button10.BackColor = Color.WhiteSmoke;
-                            Form2.SetMonitorValues("Feathers", "Feathers:");
+                            Form2.SetMonitorValues("pFeathers", "pFeathers:");
                             label12.Text = ("");
                             label12.ForeColor = Color.FromArgb(80, 80, 80);
                             label12.BackColor = Color.WhiteSmoke;
@@ -2924,7 +2574,7 @@ namespace SuperEd
                             button9.BackColor = Color.WhiteSmoke;
                             button11.Enabled = false;
                             button11.BackColor = Color.WhiteSmoke;
-                            Form2.SetMonitorValues("Dominoes", "Dominoes:");
+                            Form2.SetMonitorValues("pDominoes", "pDominoes:");
                             label15.Text = ("");
                             label15.ForeColor = Color.FromArgb(80, 80, 80);
                             label15.BackColor = Color.WhiteSmoke;
@@ -2933,7 +2583,7 @@ namespace SuperEd
                             button12.BackColor = Color.WhiteSmoke;
                             button14.Enabled = false;
                             button14.BackColor = Color.WhiteSmoke;
-                            Form2.SetMonitorValues("Pointers.piggyBanks", "Piggy Banks:");
+                            Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks:");
                             label16.Text = ("");
                             label16.ForeColor = Color.FromArgb(80, 80, 80);
                             label16.BackColor = Color.WhiteSmoke;
@@ -3017,7 +2667,7 @@ namespace SuperEd
                             panel32.BackColor = Color.WhiteSmoke;
                             button31.Enabled = false;
                             button31.BackColor = Color.WhiteSmoke;
-                            Form2.SetMonitorValues("SilverSpades", "Silver Spades:");
+                            Form2.SetMonitorValues("pSilverspades", "Silver Spades:");
                             label4.Text = ("");
                             label4.ForeColor = Color.FromArgb(80, 80, 80);
                             label4.BackColor = Color.WhiteSmoke;
