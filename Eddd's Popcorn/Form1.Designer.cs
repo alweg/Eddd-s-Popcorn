@@ -1458,9 +1458,9 @@
             this.label32.Location = new System.Drawing.Point(557, 68);
             this.label32.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(52, 16);
+            this.label32.Size = new System.Drawing.Size(53, 16);
             this.label32.TabIndex = 4;
-            this.label32.Text = "V2.18";
+            this.label32.Text = "V1.00";
             // 
             // panel32
             // 

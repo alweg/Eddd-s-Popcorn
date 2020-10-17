@@ -8,12 +8,13 @@ namespace SuperEd
 {
     public partial class Form1 : Form
     {
-        private Mem mem = new Mem();
+        private readonly Mem mem = new Mem();
         private readonly Form2 Form2 = null;
         private int pID = 0;
         private int currentBackground = 0;
         private bool processRunning = false;
         private bool tabDown = false;
+        private readonly string version = "V2.22";
         private readonly KeyHook keyHook = new KeyHook();
 
         public Form1()
@@ -23,6 +24,8 @@ namespace SuperEd
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            label32.Text = version;
+
             if (!backgroundWorker1.IsBusy)
             {
                 backgroundWorker1.RunWorkerAsync();
@@ -1213,13 +1216,13 @@ namespace SuperEd
                                 }
                                 switch (mem.ReadInt(Pointers.pPinwheels))
                                 {
-                                    default: { Form2.SetMonitorValues("pPinwheels", "pPinwheels: 0/6"); label8.Text = ("0"); break; }
-                                    case 65536: { Form2.SetMonitorValues("pPinwheels", "pPinwheels: 1/6"); label8.Text = ("1"); break; }
-                                    case 131072: { Form2.SetMonitorValues("pPinwheels", "pPinwheels: 2/6"); label8.Text = ("2"); break; }
-                                    case 196608: { Form2.SetMonitorValues("pPinwheels", "pPinwheels: 3/6"); label8.Text = ("3"); break; }
-                                    case 262144: { Form2.SetMonitorValues("pPinwheels", "pPinwheels: 4/6"); label8.Text = ("4"); break; }
-                                    case 327680: { Form2.SetMonitorValues("pPinwheels", "pPinwheels: 5/6"); label8.Text = ("5"); break; }
-                                    case 393216: { Form2.SetMonitorValues("pPinwheels", "pPinwheels: 6/6"); label8.Text = ("6"); break; }
+                                    default: { Form2.SetMonitorValues("Pinwheels", "pPinwheels: 0/6"); label8.Text = ("0"); break; }
+                                    case 65536: { Form2.SetMonitorValues("Pinwheels", "pPinwheels: 1/6"); label8.Text = ("1"); break; }
+                                    case 131072: { Form2.SetMonitorValues("Pinwheels", "pPinwheels: 2/6"); label8.Text = ("2"); break; }
+                                    case 196608: { Form2.SetMonitorValues("Pinwheels", "pPinwheels: 3/6"); label8.Text = ("3"); break; }
+                                    case 262144: { Form2.SetMonitorValues("Pinwheels", "pPinwheels: 4/6"); label8.Text = ("4"); break; }
+                                    case 327680: { Form2.SetMonitorValues("Pinwheels", "pPinwheels: 5/6"); label8.Text = ("5"); break; }
+                                    case 393216: { Form2.SetMonitorValues("Pinwheels", "pPinwheels: 6/6"); label8.Text = ("6"); break; }
                                 }
                                 label8.ForeColor = Color.White;
                                 label8.BackColor = Color.SandyBrown;
@@ -1247,13 +1250,13 @@ namespace SuperEd
                                 }
                                 switch (mem.ReadInt(Pointers.pJumpingStones))
                                 {
-                                    default: { Form2.SetMonitorValues("pJumpingStones", "Jumping Stones: 0/6"); label11.Text = ("0"); break; }
-                                    case 65536: { Form2.SetMonitorValues("pJumpingStones", "Jumping Stones: 1/6"); label11.Text = ("1"); break; }
-                                    case 131072: { Form2.SetMonitorValues("pJumpingStones", "Jumping Stones: 2/6"); label11.Text = ("2"); break; }
-                                    case 196608: { Form2.SetMonitorValues("pJumpingStones", "Jumping Stones: 3/6"); label11.Text = ("3"); break; }
-                                    case 262144: { Form2.SetMonitorValues("pJumpingStones", "Jumping Stones: 4/6"); label11.Text = ("4"); break; }
-                                    case 327680: { Form2.SetMonitorValues("pJumpingStones", "Jumping Stones: 5/6"); label11.Text = ("5"); break; }
-                                    case 393216: { Form2.SetMonitorValues("pJumpingStones", "Jumping Stones: 6/6"); label11.Text = ("6"); break; }
+                                    default: { Form2.SetMonitorValues("JumpingStones", "Jumping Stones: 0/6"); label11.Text = ("0"); break; }
+                                    case 65536: { Form2.SetMonitorValues("JumpingStones", "Jumping Stones: 1/6"); label11.Text = ("1"); break; }
+                                    case 131072: { Form2.SetMonitorValues("JumpingStones", "Jumping Stones: 2/6"); label11.Text = ("2"); break; }
+                                    case 196608: { Form2.SetMonitorValues("JumpingStones", "Jumping Stones: 3/6"); label11.Text = ("3"); break; }
+                                    case 262144: { Form2.SetMonitorValues("JumpingStones", "Jumping Stones: 4/6"); label11.Text = ("4"); break; }
+                                    case 327680: { Form2.SetMonitorValues("JumpingStones", "Jumping Stones: 5/6"); label11.Text = ("5"); break; }
+                                    case 393216: { Form2.SetMonitorValues("JumpingStones", "Jumping Stones: 6/6"); label11.Text = ("6"); break; }
                                 }
                                 label11.ForeColor = Color.White;
                                 label11.BackColor = Color.LightSlateGray;
@@ -1281,13 +1284,13 @@ namespace SuperEd
                                 }
                                 switch (mem.ReadInt(Pointers.pFeathers))
                                 {
-                                    default: { Form2.SetMonitorValues("pFeathers", "pFeathers: 0/6"); label12.Text = ("0"); break; }
-                                    case 65536: { Form2.SetMonitorValues("pFeathers", "pFeathers: 1/6"); label12.Text = ("1"); break; }
-                                    case 131072: { Form2.SetMonitorValues("pFeathers", "pFeathers: 2/6"); label12.Text = ("2"); break; }
-                                    case 196608: { Form2.SetMonitorValues("pFeathers", "pFeathers: 3/6"); label12.Text = ("3"); break; }
-                                    case 262144: { Form2.SetMonitorValues("pFeathers", "pFeathers: 4/6"); label12.Text = ("4"); break; }
-                                    case 327680: { Form2.SetMonitorValues("pFeathers", "pFeathers: 5/6"); label12.Text = ("5"); break; }
-                                    case 393216: { Form2.SetMonitorValues("pFeathers", "pFeathers: 6/6"); label12.Text = ("6"); break; }
+                                    default: { Form2.SetMonitorValues("Feathers", "pFeathers: 0/6"); label12.Text = ("0"); break; }
+                                    case 65536: { Form2.SetMonitorValues("Feathers", "pFeathers: 1/6"); label12.Text = ("1"); break; }
+                                    case 131072: { Form2.SetMonitorValues("Feathers", "pFeathers: 2/6"); label12.Text = ("2"); break; }
+                                    case 196608: { Form2.SetMonitorValues("Feathers", "pFeathers: 3/6"); label12.Text = ("3"); break; }
+                                    case 262144: { Form2.SetMonitorValues("Feathers", "pFeathers: 4/6"); label12.Text = ("4"); break; }
+                                    case 327680: { Form2.SetMonitorValues("Feathers", "pFeathers: 5/6"); label12.Text = ("5"); break; }
+                                    case 393216: { Form2.SetMonitorValues("Feathers", "pFeathers: 6/6"); label12.Text = ("6"); break; }
                                 }
                                 label12.ForeColor = Color.White;
                                 label12.BackColor = Color.Plum;
@@ -1315,13 +1318,13 @@ namespace SuperEd
                                 }
                                 switch (mem.ReadInt(Pointers.pDominoes))
                                 {
-                                    default: { Form2.SetMonitorValues("pDominoes", "pDominoes: 0/6"); label15.Text = ("0"); break; }
-                                    case 65536: { Form2.SetMonitorValues("pDominoes", "pDominoes: 1/6"); label15.Text = ("1"); break; }
-                                    case 131072: { Form2.SetMonitorValues("pDominoes", "pDominoes: 2/6"); label15.Text = ("2"); break; }
-                                    case 196608: { Form2.SetMonitorValues("pDominoes", "pDominoes: 3/6"); label15.Text = ("3"); break; }
-                                    case 262144: { Form2.SetMonitorValues("pDominoes", "pDominoes: 4/6"); label15.Text = ("4"); break; }
-                                    case 327680: { Form2.SetMonitorValues("pDominoes", "pDominoes: 5/6"); label15.Text = ("5"); break; }
-                                    case 393216: { Form2.SetMonitorValues("pDominoes", "pDominoes: 6/6"); label15.Text = ("6"); break; }
+                                    default: { Form2.SetMonitorValues("Dominoes", "pDominoes: 0/6"); label15.Text = ("0"); break; }
+                                    case 65536: { Form2.SetMonitorValues("Dominoes", "pDominoes: 1/6"); label15.Text = ("1"); break; }
+                                    case 131072: { Form2.SetMonitorValues("Dominoes", "pDominoes: 2/6"); label15.Text = ("2"); break; }
+                                    case 196608: { Form2.SetMonitorValues("Dominoes", "pDominoes: 3/6"); label15.Text = ("3"); break; }
+                                    case 262144: { Form2.SetMonitorValues("Dominoes", "pDominoes: 4/6"); label15.Text = ("4"); break; }
+                                    case 327680: { Form2.SetMonitorValues("Dominoes", "pDominoes: 5/6"); label15.Text = ("5"); break; }
+                                    case 393216: { Form2.SetMonitorValues("Dominoes", "pDominoes: 6/6"); label15.Text = ("6"); break; }
                                 }
                                 label15.ForeColor = Color.White;
                                 label15.BackColor = Color.FromArgb(128, 64, 0);
@@ -1349,13 +1352,13 @@ namespace SuperEd
                                 }
                                 switch (mem.ReadInt(Pointers.pPiggyBanks))
                                 {
-                                    default: { Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks: 0/6"); label16.Text = ("0"); break; }
-                                    case 65536: { Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks: 1/6"); label16.Text = ("1"); break; }
-                                    case 131072: { Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks: 2/6"); label16.Text = ("2"); break; }
-                                    case 196608: { Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks: 3/6"); label16.Text = ("3"); break; }
-                                    case 262144: { Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks: 4/6"); label16.Text = ("4"); break; }
-                                    case 327680: { Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks: 5/6"); label16.Text = ("5"); break; }
-                                    case 393216: { Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks: 6/6"); label16.Text = ("6"); break; }
+                                    default: { Form2.SetMonitorValues("PiggyBanks", "Piggy Banks: 0/6"); label16.Text = ("0"); break; }
+                                    case 65536: { Form2.SetMonitorValues("PiggyBanks", "Piggy Banks: 1/6"); label16.Text = ("1"); break; }
+                                    case 131072: { Form2.SetMonitorValues("PiggyBanks", "Piggy Banks: 2/6"); label16.Text = ("2"); break; }
+                                    case 196608: { Form2.SetMonitorValues("PiggyBanks", "Piggy Banks: 3/6"); label16.Text = ("3"); break; }
+                                    case 262144: { Form2.SetMonitorValues("PiggyBanks", "Piggy Banks: 4/6"); label16.Text = ("4"); break; }
+                                    case 327680: { Form2.SetMonitorValues("PiggyBanks", "Piggy Banks: 5/6"); label16.Text = ("5"); break; }
+                                    case 393216: { Form2.SetMonitorValues("PiggyBanks", "Piggy Banks: 6/6"); label16.Text = ("6"); break; }
                                 }
                                 label16.ForeColor = Color.White;
                                 label16.BackColor = Color.DeepPink;
@@ -2276,62 +2279,62 @@ namespace SuperEd
                                 {
                                     default:
                                         {
-                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 0/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
+                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 0/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("0"); break;
                                         }
                                     case 2560:
                                         {
-                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 0/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
+                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 0/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("0"); break;
                                         }
                                     case 2561:
                                         {
-                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 1/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
+                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 1/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("1"); break;
                                         }
                                     case 2562:
                                         {
-                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 2/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
+                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 2/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("2"); break;
                                         }
                                     case 2563:
                                         {
-                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 3/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
+                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 3/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("3"); break;
                                         }
                                     case 2564:
                                         {
-                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 4/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
+                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 4/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("4"); break;
                                         }
                                     case 2565:
                                         {
-                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 5/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
+                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 5/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("5"); break;
                                         }
                                     case 2566:
                                         {
-                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 6/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
+                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 6/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("6"); break;
                                         }
                                     case 2567:
                                         {
-                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 7/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
+                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 7/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("7"); break;
                                         }
                                     case 2568:
                                         {
-                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 8/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
+                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 8/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("8"); break;
                                         }
                                     case 2569:
                                         {
-                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 9/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
+                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 9/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("9"); break;
                                         }
                                     case 2570:
                                         {
-                                            Form2.SetMonitorValues("pSilverspades", "Silver Spades: 10/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
+                                            Form2.SetMonitorValues("SilverSpades", "Silver Spades: 10/10 (" + mem.ReadString(Pointers.pLevelName) + (")"));
                                             label4.Text = ("10"); break;
                                         }
                                 }
@@ -2388,7 +2391,7 @@ namespace SuperEd
                                 button4.BackColor = Color.WhiteSmoke;
                                 button5.Enabled = false;
                                 button5.BackColor = Color.WhiteSmoke;
-                                Form2.SetMonitorValues("pPinwheels", "pPinwheels: 0");
+                                Form2.SetMonitorValues("Pinwheels", "pPinwheels: 0");
                                 label8.Text = ("0");
                                 label8.ForeColor = Color.FromArgb(80, 80, 80);
                                 label8.BackColor = Color.WhiteSmoke;
@@ -2397,7 +2400,7 @@ namespace SuperEd
                                 button6.BackColor = Color.WhiteSmoke;
                                 button7.Enabled = false;
                                 button7.BackColor = Color.WhiteSmoke;
-                                Form2.SetMonitorValues("pJumpingStones", "Jumping Stones: 0");
+                                Form2.SetMonitorValues("JumpingStones", "Jumping Stones: 0");
                                 label11.Text = ("0");
                                 label11.ForeColor = Color.FromArgb(80, 80, 80);
                                 label11.BackColor = Color.WhiteSmoke;
@@ -2406,7 +2409,7 @@ namespace SuperEd
                                 button8.BackColor = Color.WhiteSmoke;
                                 button10.Enabled = false;
                                 button10.BackColor = Color.WhiteSmoke;
-                                Form2.SetMonitorValues("pFeathers", "pFeathers: 0");
+                                Form2.SetMonitorValues("Feathers", "pFeathers: 0");
                                 label12.Text = ("0");
                                 label12.ForeColor = Color.FromArgb(80, 80, 80);
                                 label12.BackColor = Color.WhiteSmoke;
@@ -2415,7 +2418,7 @@ namespace SuperEd
                                 button9.BackColor = Color.WhiteSmoke;
                                 button11.Enabled = false;
                                 button11.BackColor = Color.WhiteSmoke;
-                                Form2.SetMonitorValues("pDominoes", "pDominoes: 0");
+                                Form2.SetMonitorValues("Dominoes", "pDominoes: 0");
                                 label15.Text = ("0");
                                 label15.ForeColor = Color.FromArgb(80, 80, 80);
                                 label15.BackColor = Color.WhiteSmoke;
@@ -2424,7 +2427,7 @@ namespace SuperEd
                                 button12.BackColor = Color.WhiteSmoke;
                                 button14.Enabled = false;
                                 button14.BackColor = Color.WhiteSmoke;
-                                Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks: 0");
+                                Form2.SetMonitorValues("PiggyBanks", "Piggy Banks: 0");
                                 label16.Text = ("0");
                                 label16.ForeColor = Color.FromArgb(80, 80, 80);
                                 label16.BackColor = Color.WhiteSmoke;
@@ -2508,7 +2511,7 @@ namespace SuperEd
                                 panel32.BackColor = Color.WhiteSmoke;
                                 button31.Enabled = false;
                                 button31.BackColor = Color.WhiteSmoke;
-                                Form2.SetMonitorValues("pSilverspades", "Silver Spades: 0");
+                                Form2.SetMonitorValues("SilverSpades", "Silver Spades: 0");
                                 label4.Text = ("0");
                                 label4.ForeColor = Color.FromArgb(80, 80, 80);
                                 label4.BackColor = Color.WhiteSmoke;
@@ -2547,7 +2550,7 @@ namespace SuperEd
                             button4.BackColor = Color.WhiteSmoke;
                             button5.Enabled = false;
                             button5.BackColor = Color.WhiteSmoke;
-                            Form2.SetMonitorValues("pPinwheels", "pPinwheels:");
+                            Form2.SetMonitorValues("Pinwheels", "pPinwheels:");
                             label8.Text = ("");
                             label8.ForeColor = Color.FromArgb(80, 80, 80);
                             label8.BackColor = Color.WhiteSmoke;
@@ -2556,7 +2559,7 @@ namespace SuperEd
                             button6.BackColor = Color.WhiteSmoke;
                             button7.Enabled = false;
                             button7.BackColor = Color.WhiteSmoke;
-                            Form2.SetMonitorValues("pJumpingStones", "Jumping Stones:");
+                            Form2.SetMonitorValues("JumpingStones", "Jumping Stones:");
                             label11.Text = ("");
                             label11.ForeColor = Color.FromArgb(80, 80, 80);
                             label11.BackColor = Color.WhiteSmoke;
@@ -2565,7 +2568,7 @@ namespace SuperEd
                             button8.BackColor = Color.WhiteSmoke;
                             button10.Enabled = false;
                             button10.BackColor = Color.WhiteSmoke;
-                            Form2.SetMonitorValues("pFeathers", "pFeathers:");
+                            Form2.SetMonitorValues("Feathers", "pFeathers:");
                             label12.Text = ("");
                             label12.ForeColor = Color.FromArgb(80, 80, 80);
                             label12.BackColor = Color.WhiteSmoke;
@@ -2574,7 +2577,7 @@ namespace SuperEd
                             button9.BackColor = Color.WhiteSmoke;
                             button11.Enabled = false;
                             button11.BackColor = Color.WhiteSmoke;
-                            Form2.SetMonitorValues("pDominoes", "pDominoes:");
+                            Form2.SetMonitorValues("Dominoes", "pDominoes:");
                             label15.Text = ("");
                             label15.ForeColor = Color.FromArgb(80, 80, 80);
                             label15.BackColor = Color.WhiteSmoke;
@@ -2583,7 +2586,7 @@ namespace SuperEd
                             button12.BackColor = Color.WhiteSmoke;
                             button14.Enabled = false;
                             button14.BackColor = Color.WhiteSmoke;
-                            Form2.SetMonitorValues("Pointers.pPiggyBanks", "Piggy Banks:");
+                            Form2.SetMonitorValues("PiggyBanks", "Piggy Banks:");
                             label16.Text = ("");
                             label16.ForeColor = Color.FromArgb(80, 80, 80);
                             label16.BackColor = Color.WhiteSmoke;
@@ -2667,7 +2670,7 @@ namespace SuperEd
                             panel32.BackColor = Color.WhiteSmoke;
                             button31.Enabled = false;
                             button31.BackColor = Color.WhiteSmoke;
-                            Form2.SetMonitorValues("pSilverspades", "Silver Spades:");
+                            Form2.SetMonitorValues("SilverSpades", "Silver Spades:");
                             label4.Text = ("");
                             label4.ForeColor = Color.FromArgb(80, 80, 80);
                             label4.BackColor = Color.WhiteSmoke;

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("EP_v2.21_SE V8.5.2")]
+[assembly: AssemblyTitle("EP_v2.22_SE V8.5.2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("EP_v2.21_SE V8.5.2")]
+[assembly: AssemblyProduct("EP_v2.22_SE V8.5.2")]
 [assembly: AssemblyCopyright("Copyright © Eddd 2019 - 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

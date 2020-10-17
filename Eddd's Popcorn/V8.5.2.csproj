@@ -8,7 +8,7 @@
     <ProjectGuid>{AFF5E2E3-4A67-41BA-AF4F-A3202935F7B3}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>SuperEd</RootNamespace>
-    <AssemblyName>EP_V2.21_SE_V8.5.2</AssemblyName>
+    <AssemblyName>EP_V2.22_SE_V8.5.2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
