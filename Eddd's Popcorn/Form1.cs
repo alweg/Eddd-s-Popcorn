@@ -14,7 +14,7 @@ namespace SuperEd
         private int currentBackground = 0;
         private bool processRunning = false;
         private bool tabDown = false;
-        private readonly string version = "V2.22";
+        private readonly string version = "V2.2.2";
         private readonly KeyHook keyHook = new KeyHook();
 
         public Form1()

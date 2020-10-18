@@ -1455,12 +1455,12 @@
             this.label32.BackColor = System.Drawing.Color.White;
             this.label32.Font = new System.Drawing.Font("Tonic Trouble Special Edition", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label32.Location = new System.Drawing.Point(557, 68);
+            this.label32.Location = new System.Drawing.Point(552, 68);
             this.label32.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(53, 16);
+            this.label32.Size = new System.Drawing.Size(58, 16);
             this.label32.TabIndex = 4;
-            this.label32.Text = "V1.00";
+            this.label32.Text = "V1.0.0";
             // 
             // panel32
             // 
