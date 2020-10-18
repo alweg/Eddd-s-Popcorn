@@ -23,4 +23,4 @@ A Trainer for **Tonic Trouble Special Edition (V8.5.2)**
 
 ## Libraries used
 * [Memory.dll](https://github.com/erfg12/memory.dll) (C# Hacking library for making PC game trainers - By **erfg12**)
-* [Costura](https://github.com/Fody/Costura) (Embed references as resources - **By Fody**)
+* [Costura](https://github.com/Fody/Costura) (Embed references as resources - By **Fody**)
