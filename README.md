@@ -1,3 +1,7 @@
+## Screenshots
+<img src="Screenshots/Popcorn.png" />
+<img src="Screenshots/PopcornMonitor.png" />
+
 # Description - [Latest Release](https://github.com/alweg/Eddd-s-Popcorn/releases)
 A Trainer for **Tonic Trouble Special Edition (V8.5.2)**
 
